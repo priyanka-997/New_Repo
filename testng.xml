@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+		<class name="api.test.LoginTests"/>
+      <class name="api.test.PincodeServiceableTests"/>
+          <class name="api.test.DetectDeviceTests"/>
+              <class name="api.test.ListVariantsTests"/>
+      <class name="api.test.GetCommonQuoteTests"/>
+      <class name="api.test.GetAddressTests"/>
+      <class name="api.test.AddUpdateAddressTests"/> 
+      <class name="api.test.ApplicablePaymentMethodsTests"/>
+       <class name="api.test.VerifyIfscTests"/>
+      <class name="api.test.OrderAvailableTimeslotsTests"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
