@@ -2,6 +2,7 @@ package api.test;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 import api.endpoints.GetCommonQuoteEndPoints;
 import api.endpoints.GlobalVariables;
 import io.restassured.response.Response;
