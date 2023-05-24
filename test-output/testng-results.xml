@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="12" passed="8" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-23T11:07:48 IST" name="Suite" finished-at="2023-05-23T11:08:05 IST" duration-ms="17193">
+  <suite started-at="2023-05-23T18:06:54 IST" name="Suite" finished-at="2023-05-23T18:07:09 IST" duration-ms="15086">
     <groups>
     </groups>
-    <test started-at="2023-05-23T11:07:48 IST" name="Test" finished-at="2023-05-23T11:08:05 IST" duration-ms="17193">
+    <test started-at="2023-05-23T18:06:54 IST" name="Test" finished-at="2023-05-23T18:07:09 IST" duration-ms="15086">
       <class name="api.test.PincodeServiceableTests">
-        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.PincodeServiceableTests@272113c4]" started-at="2023-05-23T11:07:59 IST" name="setupData" finished-at="2023-05-23T11:07:59 IST" duration-ms="111" status="PASS">
+        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.PincodeServiceableTests@272113c4]" started-at="2023-05-23T18:07:03 IST" name="setupData" finished-at="2023-05-23T18:07:03 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupData -->
-        <test-method signature="pincodeServiceable()[pri:4, instance:api.test.PincodeServiceableTests@272113c4]" started-at="2023-05-23T11:07:59 IST" name="pincodeServiceable" finished-at="2023-05-23T11:08:01 IST" duration-ms="2001" status="PASS">
+        <test-method signature="pincodeServiceable()[pri:4, instance:api.test.PincodeServiceableTests@272113c4]" started-at="2023-05-23T18:07:03 IST" name="pincodeServiceable" finished-at="2023-05-23T18:07:04 IST" duration-ms="1169" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pincodeServiceable -->
       </class> <!-- api.test.PincodeServiceableTests -->
       <class name="api.test.GetAddressTests">
-        <test-method signature="testGetAddress()[pri:8, instance:api.test.GetAddressTests@242b836]" started-at="2023-05-23T11:08:03 IST" name="testGetAddress" finished-at="2023-05-23T11:08:04 IST" duration-ms="656" status="PASS">
+        <test-method signature="testGetAddress()[pri:8, instance:api.test.GetAddressTests@242b836]" started-at="2023-05-23T18:07:07 IST" name="testGetAddress" finished-at="2023-05-23T18:07:08 IST" duration-ms="423" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetAddress -->
       </class> <!-- api.test.GetAddressTests -->
       <class name="api.test.OrderAvailableTimeslotsTests">
-        <test-method signature="testOrderAvaialbleTimeslots()[pri:12, instance:api.test.OrderAvailableTimeslotsTests@1ed6388a]" started-at="2023-05-23T11:08:05 IST" name="testOrderAvaialbleTimeslots" finished-at="2023-05-23T11:08:05 IST" duration-ms="321" status="FAIL">
+        <test-method signature="testOrderAvaialbleTimeslots()[pri:12, instance:api.test.OrderAvailableTimeslotsTests@1ed6388a]" started-at="2023-05-23T18:07:08 IST" name="testOrderAvaialbleTimeslots" finished-at="2023-05-23T18:07:09 IST" duration-ms="820" status="FAIL">
           <exception class="java.lang.NumberFormatException">
             <message>
               <![CDATA[For input string: "11-07-2023"]]>
@@ -76,7 +76,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- testOrderAvaialbleTimeslots -->
       </class> <!-- api.test.OrderAvailableTimeslotsTests -->
       <class name="api.test.GetCommonQuoteTests">
-        <test-method signature="testGetCommonQuotes()[pri:7, instance:api.test.GetCommonQuoteTests@2d52216b]" started-at="2023-05-23T11:08:03 IST" name="testGetCommonQuotes" finished-at="2023-05-23T11:08:03 IST" duration-ms="298" status="FAIL">
+        <test-method signature="testGetCommonQuotes()[pri:7, instance:api.test.GetCommonQuoteTests@2d52216b]" started-at="2023-05-23T18:07:06 IST" name="testGetCommonQuotes" finished-at="2023-05-23T18:07:07 IST" duration-ms="976" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Success] but found [Invalid or missing parameters]]]>
@@ -89,7 +89,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:149)
 at org.testng.Assert.assertEquals(Assert.java:131)
 at org.testng.Assert.assertEquals(Assert.java:655)
 at org.testng.Assert.assertEquals(Assert.java:665)
-at api.test.GetCommonQuoteTests.testGetCommonQuotes(GetCommonQuoteTests.java:109)
+at api.test.GetCommonQuoteTests.testGetCommonQuotes(GetCommonQuoteTests.java:110)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -126,7 +126,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- testGetCommonQuotes -->
       </class> <!-- api.test.GetCommonQuoteTests -->
       <class name="api.test.ApplicablePaymentMethodsTests">
-        <test-method signature="testApplicablePaymentMethods()[pri:10, instance:api.test.ApplicablePaymentMethodsTests@3527942a]" started-at="2023-05-23T11:08:04 IST" name="testApplicablePaymentMethods" finished-at="2023-05-23T11:08:04 IST" duration-ms="22" status="FAIL">
+        <test-method signature="testApplicablePaymentMethods()[pri:10, instance:api.test.ApplicablePaymentMethodsTests@3527942a]" started-at="2023-05-23T18:07:08 IST" name="testApplicablePaymentMethods" finished-at="2023-05-23T18:07:08 IST" duration-ms="8" status="FAIL">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[body cannot be null]]>
@@ -187,35 +187,35 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- testApplicablePaymentMethods -->
       </class> <!-- api.test.ApplicablePaymentMethodsTests -->
       <class name="api.test.LoginTests">
-        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.LoginTests@506ae4d4]" started-at="2023-05-23T11:07:48 IST" name="setupData" finished-at="2023-05-23T11:07:48 IST" duration-ms="61" status="PASS">
+        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.LoginTests@506ae4d4]" started-at="2023-05-23T18:06:54 IST" name="setupData" finished-at="2023-05-23T18:06:54 IST" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupData -->
-        <test-method signature="testLogin()[pri:1, instance:api.test.LoginTests@506ae4d4]" started-at="2023-05-23T11:07:48 IST" name="testLogin" finished-at="2023-05-23T11:07:55 IST" duration-ms="7556" status="PASS">
+        <test-method signature="testLogin()[pri:1, instance:api.test.LoginTests@506ae4d4]" started-at="2023-05-23T18:06:54 IST" name="testLogin" finished-at="2023-05-23T18:07:00 IST" duration-ms="5479" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method signature="testResendOtp()[pri:2, instance:api.test.LoginTests@506ae4d4]" started-at="2023-05-23T11:07:55 IST" name="testResendOtp" finished-at="2023-05-23T11:07:58 IST" duration-ms="2775" status="PASS">
+        <test-method signature="testResendOtp()[pri:2, instance:api.test.LoginTests@506ae4d4]" started-at="2023-05-23T18:07:00 IST" name="testResendOtp" finished-at="2023-05-23T18:07:02 IST" duration-ms="2325" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testResendOtp -->
-        <test-method signature="testVerifyOtp()[pri:3, instance:api.test.LoginTests@506ae4d4]" started-at="2023-05-23T11:07:58 IST" name="testVerifyOtp" finished-at="2023-05-23T11:07:59 IST" duration-ms="374" status="PASS">
+        <test-method signature="testVerifyOtp()[pri:3, instance:api.test.LoginTests@506ae4d4]" started-at="2023-05-23T18:07:02 IST" name="testVerifyOtp" finished-at="2023-05-23T18:07:03 IST" duration-ms="838" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testVerifyOtp -->
       </class> <!-- api.test.LoginTests -->
       <class name="api.test.DetectDeviceTests">
-        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.DetectDeviceTests@73e9cf30]" started-at="2023-05-23T11:08:01 IST" name="setupData" finished-at="2023-05-23T11:08:01 IST" duration-ms="16" status="PASS">
+        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.DetectDeviceTests@73e9cf30]" started-at="2023-05-23T18:07:04 IST" name="setupData" finished-at="2023-05-23T18:07:04 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupData -->
-        <test-method signature="testDetectDevice()[pri:5, instance:api.test.DetectDeviceTests@73e9cf30]" started-at="2023-05-23T11:08:01 IST" name="testDetectDevice" finished-at="2023-05-23T11:08:02 IST" duration-ms="1235" status="PASS">
+        <test-method signature="testDetectDevice()[pri:5, instance:api.test.DetectDeviceTests@73e9cf30]" started-at="2023-05-23T18:07:04 IST" name="testDetectDevice" finished-at="2023-05-23T18:07:05 IST" duration-ms="1079" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDetectDevice -->
       </class> <!-- api.test.DetectDeviceTests -->
       <class name="api.test.VerifyIfscTests">
-        <test-method signature="testVerifyIfsc()[pri:11, instance:api.test.VerifyIfscTests@942a29c]" started-at="2023-05-23T11:08:04 IST" name="testVerifyIfsc" finished-at="2023-05-23T11:08:05 IST" duration-ms="347" status="FAIL">
+        <test-method signature="testVerifyIfsc()[pri:11, instance:api.test.VerifyIfscTests@942a29c]" started-at="2023-05-23T18:07:08 IST" name="testVerifyIfsc" finished-at="2023-05-23T18:07:08 IST" duration-ms="390" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [success] but found [Invalid or missing parameters]]]>
@@ -265,17 +265,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- testVerifyIfsc -->
       </class> <!-- api.test.VerifyIfscTests -->
       <class name="api.test.AddUpdateAddressTests">
-        <test-method signature="testAddUpdateAddress()[pri:9, instance:api.test.AddUpdateAddressTests@3f6f6701]" started-at="2023-05-23T11:08:04 IST" name="testAddUpdateAddress" finished-at="2023-05-23T11:08:04 IST" duration-ms="385" status="PASS">
+        <test-method signature="testAddUpdateAddress()[pri:9, instance:api.test.AddUpdateAddressTests@3f6f6701]" started-at="2023-05-23T18:07:08 IST" name="testAddUpdateAddress" finished-at="2023-05-23T18:07:08 IST" duration-ms="342" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddUpdateAddress -->
       </class> <!-- api.test.AddUpdateAddressTests -->
       <class name="api.test.ListVariantsTests">
-        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.ListVariantsTests@771a660]" started-at="2023-05-23T11:08:02 IST" name="setupData" finished-at="2023-05-23T11:08:02 IST" duration-ms="16" status="PASS">
+        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.ListVariantsTests@771a660]" started-at="2023-05-23T18:07:05 IST" name="setupData" finished-at="2023-05-23T18:07:05 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupData -->
-        <test-method signature="testListVariantQuestions()[pri:6, instance:api.test.ListVariantsTests@771a660]" started-at="2023-05-23T11:08:02 IST" name="testListVariantQuestions" finished-at="2023-05-23T11:08:03 IST" duration-ms="771" status="PASS">
+        <test-method signature="testListVariantQuestions()[pri:6, instance:api.test.ListVariantsTests@771a660]" started-at="2023-05-23T18:07:05 IST" name="testListVariantQuestions" finished-at="2023-05-23T18:07:06 IST" duration-ms="1034" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testListVariantQuestions -->
