@@ -12,7 +12,8 @@ public class GlobalVariables {
 		public static String homeAddressID;
 		public static String officeAddressID;
 		public static String time_slot;
-		public static int date;
+		public static String date;
+		public static final String  ifsc= "icic0000876";
 		
 		
 	}

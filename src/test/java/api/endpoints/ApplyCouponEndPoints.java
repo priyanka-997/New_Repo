@@ -2,24 +2,26 @@ package api.endpoints;
 
 import io.restassured.response.Response;
 import static io.restassured.RestAssured.given;
+
+import api.payload.ApplyCouponPojo;
 import io.restassured.http.ContentType;
 
-public class VerifyIfscEndPoints {
+public class ApplyCouponEndPoints {
 	
-	public static Response verifyIfsc() {
+	public static Response applyCoupon(ApplyCouponPojo applyCouponPayload) {
 		
 		Response response = (Response) given()
-				
-				.headers("Authorization", "Bearer " +GlobalVariables.token)
 				.contentType(ContentType.JSON)
 				.accept(ContentType.JSON)
-				.body(GlobalVariables.ifsc)
+				.headers("Authorization", "Bearer "+GlobalVariables.token)
+				.body(applyCouponPayload)
 				
-				
-				.when()
-				.post(Routes.verifyIfsc_post_url);
+				.when();
 		
 		return response;
-	}
+		
+		
+		
 	}
 
+}

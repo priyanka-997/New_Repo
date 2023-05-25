@@ -1,82 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="8" failed="4" skipped="0">
+<testng-results ignored="0" total="12" passed="9" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-23T18:06:54 IST" name="Suite" finished-at="2023-05-23T18:07:09 IST" duration-ms="15086">
+  <suite started-at="2023-05-25T11:17:43 IST" name="Suite" finished-at="2023-05-25T11:17:53 IST" duration-ms="9597">
     <groups>
     </groups>
-    <test started-at="2023-05-23T18:06:54 IST" name="Test" finished-at="2023-05-23T18:07:09 IST" duration-ms="15086">
+    <test started-at="2023-05-25T11:17:43 IST" name="Test" finished-at="2023-05-25T11:17:53 IST" duration-ms="9597">
       <class name="api.test.PincodeServiceableTests">
-        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.PincodeServiceableTests@272113c4]" started-at="2023-05-23T18:07:03 IST" name="setupData" finished-at="2023-05-23T18:07:03 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.PincodeServiceableTests@272113c4]" started-at="2023-05-25T11:17:50 IST" name="setupData" finished-at="2023-05-25T11:17:50 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupData -->
-        <test-method signature="pincodeServiceable()[pri:4, instance:api.test.PincodeServiceableTests@272113c4]" started-at="2023-05-23T18:07:03 IST" name="pincodeServiceable" finished-at="2023-05-23T18:07:04 IST" duration-ms="1169" status="PASS">
+        <test-method signature="pincodeServiceable()[pri:4, instance:api.test.PincodeServiceableTests@272113c4]" started-at="2023-05-25T11:17:50 IST" name="pincodeServiceable" finished-at="2023-05-25T11:17:50 IST" duration-ms="362" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pincodeServiceable -->
       </class> <!-- api.test.PincodeServiceableTests -->
       <class name="api.test.GetAddressTests">
-        <test-method signature="testGetAddress()[pri:8, instance:api.test.GetAddressTests@242b836]" started-at="2023-05-23T18:07:07 IST" name="testGetAddress" finished-at="2023-05-23T18:07:08 IST" duration-ms="423" status="PASS">
+        <test-method signature="testGetAddress()[pri:8, instance:api.test.GetAddressTests@242b836]" started-at="2023-05-25T11:17:52 IST" name="testGetAddress" finished-at="2023-05-25T11:17:52 IST" duration-ms="428" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetAddress -->
       </class> <!-- api.test.GetAddressTests -->
       <class name="api.test.OrderAvailableTimeslotsTests">
-        <test-method signature="testOrderAvaialbleTimeslots()[pri:12, instance:api.test.OrderAvailableTimeslotsTests@1ed6388a]" started-at="2023-05-23T18:07:08 IST" name="testOrderAvaialbleTimeslots" finished-at="2023-05-23T18:07:09 IST" duration-ms="820" status="FAIL">
-          <exception class="java.lang.NumberFormatException">
-            <message>
-              <![CDATA[For input string: "11-07-2023"]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NumberFormatException: For input string: "11-07-2023"
-at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
-at java.base/java.lang.Integer.parseInt(Integer.java:668)
-at java.base/java.lang.Integer.parseInt(Integer.java:786)
-at java_lang_Integer$parseInt$0.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
-at io.restassured.internal.common.path.ObjectConverter.convertObjectTo(ObjectConverter.groovy:29)
-at io.restassured.path.json.JsonPath.getInt(JsonPath.java:245)
-at api.test.OrderAvailableTimeslotsTests.testOrderAvaialbleTimeslots(OrderAvailableTimeslotsTests.java:22)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NumberFormatException -->
+        <test-method signature="testOrderAvaialbleTimeslots()[pri:12, instance:api.test.OrderAvailableTimeslotsTests@942a29c]" started-at="2023-05-25T11:17:52 IST" name="testOrderAvaialbleTimeslots" finished-at="2023-05-25T11:17:53 IST" duration-ms="322" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOrderAvaialbleTimeslots -->
       </class> <!-- api.test.OrderAvailableTimeslotsTests -->
       <class name="api.test.GetCommonQuoteTests">
-        <test-method signature="testGetCommonQuotes()[pri:7, instance:api.test.GetCommonQuoteTests@2d52216b]" started-at="2023-05-23T18:07:06 IST" name="testGetCommonQuotes" finished-at="2023-05-23T18:07:07 IST" duration-ms="976" status="FAIL">
+        <test-method signature="testGetCommonQuotes()[pri:7, instance:api.test.GetCommonQuoteTests@2d52216b]" started-at="2023-05-25T11:17:51 IST" name="testGetCommonQuotes" finished-at="2023-05-25T11:17:52 IST" duration-ms="331" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Success] but found [Invalid or missing parameters]]]>
@@ -126,7 +79,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- testGetCommonQuotes -->
       </class> <!-- api.test.GetCommonQuoteTests -->
       <class name="api.test.ApplicablePaymentMethodsTests">
-        <test-method signature="testApplicablePaymentMethods()[pri:10, instance:api.test.ApplicablePaymentMethodsTests@3527942a]" started-at="2023-05-23T18:07:08 IST" name="testApplicablePaymentMethods" finished-at="2023-05-23T18:07:08 IST" duration-ms="8" status="FAIL">
+        <test-method signature="testApplicablePaymentMethods()[pri:10, instance:api.test.ApplicablePaymentMethodsTests@3527942a]" started-at="2023-05-25T11:17:52 IST" name="testApplicablePaymentMethods" finished-at="2023-05-25T11:17:52 IST" duration-ms="7" status="FAIL">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[body cannot be null]]>
@@ -187,35 +140,35 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- testApplicablePaymentMethods -->
       </class> <!-- api.test.ApplicablePaymentMethodsTests -->
       <class name="api.test.LoginTests">
-        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.LoginTests@506ae4d4]" started-at="2023-05-23T18:06:54 IST" name="setupData" finished-at="2023-05-23T18:06:54 IST" duration-ms="22" status="PASS">
+        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.LoginTests@506ae4d4]" started-at="2023-05-25T11:17:44 IST" name="setupData" finished-at="2023-05-25T11:17:44 IST" duration-ms="30" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupData -->
-        <test-method signature="testLogin()[pri:1, instance:api.test.LoginTests@506ae4d4]" started-at="2023-05-23T18:06:54 IST" name="testLogin" finished-at="2023-05-23T18:07:00 IST" duration-ms="5479" status="PASS">
+        <test-method signature="testLogin()[pri:1, instance:api.test.LoginTests@506ae4d4]" started-at="2023-05-25T11:17:44 IST" name="testLogin" finished-at="2023-05-25T11:17:48 IST" duration-ms="4238" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method signature="testResendOtp()[pri:2, instance:api.test.LoginTests@506ae4d4]" started-at="2023-05-23T18:07:00 IST" name="testResendOtp" finished-at="2023-05-23T18:07:02 IST" duration-ms="2325" status="PASS">
+        <test-method signature="testResendOtp()[pri:2, instance:api.test.LoginTests@506ae4d4]" started-at="2023-05-25T11:17:48 IST" name="testResendOtp" finished-at="2023-05-25T11:17:49 IST" duration-ms="1447" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testResendOtp -->
-        <test-method signature="testVerifyOtp()[pri:3, instance:api.test.LoginTests@506ae4d4]" started-at="2023-05-23T18:07:02 IST" name="testVerifyOtp" finished-at="2023-05-23T18:07:03 IST" duration-ms="838" status="PASS">
+        <test-method signature="testVerifyOtp()[pri:3, instance:api.test.LoginTests@506ae4d4]" started-at="2023-05-25T11:17:49 IST" name="testVerifyOtp" finished-at="2023-05-25T11:17:50 IST" duration-ms="354" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testVerifyOtp -->
       </class> <!-- api.test.LoginTests -->
       <class name="api.test.DetectDeviceTests">
-        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.DetectDeviceTests@73e9cf30]" started-at="2023-05-23T18:07:04 IST" name="setupData" finished-at="2023-05-23T18:07:04 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.DetectDeviceTests@73e9cf30]" started-at="2023-05-25T11:17:50 IST" name="setupData" finished-at="2023-05-25T11:17:50 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupData -->
-        <test-method signature="testDetectDevice()[pri:5, instance:api.test.DetectDeviceTests@73e9cf30]" started-at="2023-05-23T18:07:04 IST" name="testDetectDevice" finished-at="2023-05-23T18:07:05 IST" duration-ms="1079" status="PASS">
+        <test-method signature="testDetectDevice()[pri:5, instance:api.test.DetectDeviceTests@73e9cf30]" started-at="2023-05-25T11:17:50 IST" name="testDetectDevice" finished-at="2023-05-25T11:17:51 IST" duration-ms="808" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDetectDevice -->
       </class> <!-- api.test.DetectDeviceTests -->
       <class name="api.test.VerifyIfscTests">
-        <test-method signature="testVerifyIfsc()[pri:11, instance:api.test.VerifyIfscTests@942a29c]" started-at="2023-05-23T18:07:08 IST" name="testVerifyIfsc" finished-at="2023-05-23T18:07:08 IST" duration-ms="390" status="FAIL">
+        <test-method signature="testVerifyIfsc()[pri:11, instance:api.test.VerifyIfscTests@1ed6388a]" started-at="2023-05-25T11:17:53 IST" name="testVerifyIfsc" finished-at="2023-05-25T11:17:53 IST" duration-ms="263" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [success] but found [Invalid or missing parameters]]]>
@@ -228,7 +181,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:149)
 at org.testng.Assert.assertEquals(Assert.java:131)
 at org.testng.Assert.assertEquals(Assert.java:655)
 at org.testng.Assert.assertEquals(Assert.java:665)
-at api.test.VerifyIfscTests.testVerifyIfsc(VerifyIfscTests.java:25)
+at api.test.VerifyIfscTests.testVerifyIfsc(VerifyIfscTests.java:23)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -265,17 +218,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- testVerifyIfsc -->
       </class> <!-- api.test.VerifyIfscTests -->
       <class name="api.test.AddUpdateAddressTests">
-        <test-method signature="testAddUpdateAddress()[pri:9, instance:api.test.AddUpdateAddressTests@3f6f6701]" started-at="2023-05-23T18:07:08 IST" name="testAddUpdateAddress" finished-at="2023-05-23T18:07:08 IST" duration-ms="342" status="PASS">
+        <test-method signature="testAddUpdateAddress()[pri:9, instance:api.test.AddUpdateAddressTests@3f6f6701]" started-at="2023-05-25T11:17:52 IST" name="testAddUpdateAddress" finished-at="2023-05-25T11:17:52 IST" duration-ms="346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddUpdateAddress -->
       </class> <!-- api.test.AddUpdateAddressTests -->
       <class name="api.test.ListVariantsTests">
-        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.ListVariantsTests@771a660]" started-at="2023-05-23T18:07:05 IST" name="setupData" finished-at="2023-05-23T18:07:05 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.ListVariantsTests@771a660]" started-at="2023-05-25T11:17:51 IST" name="setupData" finished-at="2023-05-25T11:17:51 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupData -->
-        <test-method signature="testListVariantQuestions()[pri:6, instance:api.test.ListVariantsTests@771a660]" started-at="2023-05-23T18:07:05 IST" name="testListVariantQuestions" finished-at="2023-05-23T18:07:06 IST" duration-ms="1034" status="PASS">
+        <test-method signature="testListVariantQuestions()[pri:6, instance:api.test.ListVariantsTests@771a660]" started-at="2023-05-25T11:17:51 IST" name="testListVariantQuestions" finished-at="2023-05-25T11:17:51 IST" duration-ms="453" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testListVariantQuestions -->

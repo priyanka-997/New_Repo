@@ -37,4 +37,6 @@ public class Routes {
 	//Order Available Time slots
 	public static String order_availableSlot_get_url = base_url +"/api/order-place/order-available-timeslots"; 
 	
+	//Apply Coupon
+	public static String apply_coupon_post_url = base_url +"/api/order-place/apply-coupon";	
 }

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/4/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>9/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue May 23 18:06:54 IST 2023</td>
+<td>Started on:</td><td>Thu May 25 11:17:43 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>15 seconds (15086 ms)</td>
+<tr><td>Total time:</td><td>9 seconds (9597 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -90,8 +90,8 @@ function toggleAllBoxes() {
 	at api.endpoints.ApplicablePaymentMethodsEndPoints.applicablePaymentMathods(ApplicablePaymentMethodsEndPoints.java:17)
 	at api.test.ApplicablePaymentMethodsTests.testApplicablePaymentMethods(ApplicablePaymentMethodsTests.java:14)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1957005830", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1957005830'><pre>java.lang.IllegalArgumentException: body cannot be null
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1722868231", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1722868231'><pre>java.lang.IllegalArgumentException: body cannot be null
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -142,76 +142,19 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>api.test.ApplicablePaymentMethodsTests@3527942a</td></tr>
 <tr>
-<td title='api.test.OrderAvailableTimeslotsTests.testOrderAvaialbleTimeslots()'><b>testOrderAvaialbleTimeslots</b><br>Test class: api.test.OrderAvailableTimeslotsTests</td>
-<td><div><pre>java.lang.NumberFormatException: For input string: &quot;11-07-2023&quot;
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
-	at java.base/java.lang.Integer.parseInt(Integer.java:668)
-	at java.base/java.lang.Integer.parseInt(Integer.java:786)
-	at java_lang_Integer$parseInt$0.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
-	at io.restassured.internal.common.path.ObjectConverter.convertObjectTo(ObjectConverter.groovy:29)
-	at io.restassured.path.json.JsonPath.getInt(JsonPath.java:245)
-	at api.test.OrderAvailableTimeslotsTests.testOrderAvaialbleTimeslots(OrderAvailableTimeslotsTests.java:22)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace940088750", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace940088750'><pre>java.lang.NumberFormatException: For input string: &quot;11-07-2023&quot;
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
-	at java.base/java.lang.Integer.parseInt(Integer.java:668)
-	at java.base/java.lang.Integer.parseInt(Integer.java:786)
-	at java_lang_Integer$parseInt$0.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
-	at io.restassured.internal.common.path.ObjectConverter.convertObjectTo(ObjectConverter.groovy:29)
-	at io.restassured.path.json.JsonPath.getInt(JsonPath.java:245)
-	at api.test.OrderAvailableTimeslotsTests.testOrderAvaialbleTimeslots(OrderAvailableTimeslotsTests.java:22)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>api.test.OrderAvailableTimeslotsTests@1ed6388a</td></tr>
-<tr>
 <td title='api.test.VerifyIfscTests.testVerifyIfsc()'><b>testVerifyIfsc</b><br>Test class: api.test.VerifyIfscTests</td>
 <td><div><pre>java.lang.AssertionError: expected [success] but found [Invalid or missing parameters]
-	at api.test.VerifyIfscTests.testVerifyIfsc(VerifyIfscTests.java:25)
+	at api.test.VerifyIfscTests.testVerifyIfsc(VerifyIfscTests.java:23)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace171063899", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace171063899'><pre>java.lang.AssertionError: expected [success] but found [Invalid or missing parameters]
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1663189493", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1663189493'><pre>java.lang.AssertionError: expected [success] but found [Invalid or missing parameters]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1577)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
 	at org.testng.Assert.assertEquals(Assert.java:131)
 	at org.testng.Assert.assertEquals(Assert.java:655)
 	at org.testng.Assert.assertEquals(Assert.java:665)
-	at api.test.VerifyIfscTests.testVerifyIfsc(VerifyIfscTests.java:25)
+	at api.test.VerifyIfscTests.testVerifyIfsc(VerifyIfscTests.java:23)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -242,14 +185,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>api.test.VerifyIfscTests@942a29c</td></tr>
+<td>api.test.VerifyIfscTests@1ed6388a</td></tr>
 <tr>
 <td title='api.test.GetCommonQuoteTests.testGetCommonQuotes()'><b>testGetCommonQuotes</b><br>Test class: api.test.GetCommonQuoteTests</td>
 <td><div><pre>java.lang.AssertionError: expected [Success] but found [Invalid or missing parameters]
 	at api.test.GetCommonQuoteTests.testGetCommonQuotes(GetCommonQuoteTests.java:110)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1172390062", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1172390062'><pre>java.lang.AssertionError: expected [Success] but found [Invalid or missing parameters]
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1587279684", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1587279684'><pre>java.lang.AssertionError: expected [Success] but found [Invalid or missing parameters]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1577)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
@@ -298,29 +241,9 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='api.test.DetectDeviceTests.testDetectDevice()'><b>testDetectDevice</b><br>Test class: api.test.DetectDeviceTests</td>
-<td></td>
-<td>1</td>
-<td>api.test.DetectDeviceTests@73e9cf30</td></tr>
-<tr>
-<td title='api.test.ListVariantsTests.testListVariantQuestions()'><b>testListVariantQuestions</b><br>Test class: api.test.ListVariantsTests</td>
-<td></td>
-<td>1</td>
-<td>api.test.ListVariantsTests@771a660</td></tr>
-<tr>
-<td title='api.test.LoginTests.testResendOtp()'><b>testResendOtp</b><br>Test class: api.test.LoginTests</td>
-<td></td>
-<td>2</td>
-<td>api.test.LoginTests@506ae4d4</td></tr>
-<tr>
-<td title='api.test.PincodeServiceableTests.pincodeServiceable()'><b>pincodeServiceable</b><br>Test class: api.test.PincodeServiceableTests</td>
-<td></td>
-<td>1</td>
-<td>api.test.PincodeServiceableTests@272113c4</td></tr>
-<tr>
 <td title='api.test.LoginTests.testLogin()'><b>testLogin</b><br>Test class: api.test.LoginTests</td>
 <td></td>
-<td>5</td>
+<td>4</td>
 <td>api.test.LoginTests@506ae4d4</td></tr>
 <tr>
 <td title='api.test.LoginTests.testVerifyOtp()'><b>testVerifyOtp</b><br>Test class: api.test.LoginTests</td>
@@ -328,10 +251,35 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>api.test.LoginTests@506ae4d4</td></tr>
 <tr>
+<td title='api.test.PincodeServiceableTests.pincodeServiceable()'><b>pincodeServiceable</b><br>Test class: api.test.PincodeServiceableTests</td>
+<td></td>
+<td>0</td>
+<td>api.test.PincodeServiceableTests@272113c4</td></tr>
+<tr>
+<td title='api.test.ListVariantsTests.testListVariantQuestions()'><b>testListVariantQuestions</b><br>Test class: api.test.ListVariantsTests</td>
+<td></td>
+<td>0</td>
+<td>api.test.ListVariantsTests@771a660</td></tr>
+<tr>
 <td title='api.test.AddUpdateAddressTests.testAddUpdateAddress()'><b>testAddUpdateAddress</b><br>Test class: api.test.AddUpdateAddressTests</td>
 <td></td>
 <td>0</td>
 <td>api.test.AddUpdateAddressTests@3f6f6701</td></tr>
+<tr>
+<td title='api.test.LoginTests.testResendOtp()'><b>testResendOtp</b><br>Test class: api.test.LoginTests</td>
+<td></td>
+<td>1</td>
+<td>api.test.LoginTests@506ae4d4</td></tr>
+<tr>
+<td title='api.test.DetectDeviceTests.testDetectDevice()'><b>testDetectDevice</b><br>Test class: api.test.DetectDeviceTests</td>
+<td></td>
+<td>0</td>
+<td>api.test.DetectDeviceTests@73e9cf30</td></tr>
+<tr>
+<td title='api.test.OrderAvailableTimeslotsTests.testOrderAvaialbleTimeslots()'><b>testOrderAvaialbleTimeslots</b><br>Test class: api.test.OrderAvailableTimeslotsTests</td>
+<td></td>
+<td>0</td>
+<td>api.test.OrderAvailableTimeslotsTests@942a29c</td></tr>
 <tr>
 <td title='api.test.GetAddressTests.testGetAddress()'><b>testGetAddress</b><br>Test class: api.test.GetAddressTests</td>
 <td></td>
