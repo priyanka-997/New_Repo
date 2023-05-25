@@ -2,8 +2,6 @@ package api.endpoints;
 
 import io.restassured.response.Response;
 import static io.restassured.RestAssured.given;
-import io.restassured.http.ContentType;
-
 
 public class GetAddressEndPoints {
 	
@@ -12,12 +10,14 @@ public class GetAddressEndPoints {
 		
 	Response response = (Response) given()
 			
-			.contentType(ContentType.JSON)
-			.accept(ContentType.JSON)
+			.contentType("application/json")
+			.accept("*/*")
+			
 			.headers("Authorization", "Bearer " +GlobalVariables.token )
 						
 			.when()
 			.get(Routes.getAddress_get_url);
+	
 		return response;
 		
 		

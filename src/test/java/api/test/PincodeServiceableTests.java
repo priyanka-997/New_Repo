@@ -7,7 +7,7 @@ import api.endpoints.PincodeServiceableEndPoints;
 import io.restassured.response.Response;
 
 public class PincodeServiceableTests {
-	
+
 
 	@Test(priority=4)
 	public void pincodeServiceable() {

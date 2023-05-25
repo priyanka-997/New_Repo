@@ -4,22 +4,14 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import api.endpoints.ApplicablePaymentMethodsEndPoints;
-import api.endpoints.GlobalVariables;
 import io.restassured.response.Response;
 
 public class ApplicablePaymentMethodsTests {
 	
-	public static String quoteIdPayload() {
-	
-       String quoteIdPayload = "{\n"
-            +"\"quote_id\": \""+GlobalVariables.variant_id+"\"} ";
-	return quoteIdPayload;
-	}
-	
 	@Test(priority=10)
 	public static void testApplicablePaymentMethods() {
 		
-		Response response=  ApplicablePaymentMethodsEndPoints.applicablePaymentMathods(quoteIdPayload());
+		Response response=  ApplicablePaymentMethodsEndPoints.applicablePaymentMathods();
 		
 		response.then().log().all();
 		Assert.assertEquals(response.jsonPath().getString("message"), "Success");

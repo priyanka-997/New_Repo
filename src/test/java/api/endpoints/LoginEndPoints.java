@@ -11,6 +11,7 @@ public class LoginEndPoints {
 				
 				.contentType("application/x-www-form-urlencoded; charset=utf-8")
 				.accept("*/*")
+				
 			.formParam("mobile_number", "7905120105")
 			
 			.when()
@@ -26,6 +27,7 @@ public class LoginEndPoints {
 					
 					.contentType("application/x-www-form-urlencoded; charset=utf-8")
 					.accept("*/*")
+					
 				.formParam("mobile_number", "7905120105")
 							
 				.when()
@@ -40,6 +42,7 @@ public class LoginEndPoints {
 				
 				.contentType("application/x-www-form-urlencoded; charset=utf-8")
 				.accept("*/*")
+				
 			.formParam("mobile_number", "7905120105")
 			.formParam("otp", 1111)
 					

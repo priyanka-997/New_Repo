@@ -8,7 +8,6 @@ import io.restassured.response.Response;
 
 public class LoginTests {
 	
-	
 		@Test(priority=1)
 		public void testLogin() {
 			
@@ -44,7 +43,7 @@ public class LoginTests {
 			Assert.assertEquals(response.jsonPath().getString("profile.mobile"), "7905120105");
 			
 			
-		GlobalVariables.token = response.jsonPath().getString("tokens.token") ;
+			GlobalVariables.token = response.jsonPath().getString("tokens.token") ;
 		System.out.println("Generated token is " +GlobalVariables.token);
 		
 		

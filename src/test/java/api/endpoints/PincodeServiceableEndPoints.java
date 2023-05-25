@@ -13,6 +13,7 @@ public class PincodeServiceableEndPoints {
 				
 		.contentType("application/x-www-form-urlencoded")
 				.accept("*/*")
+				
 				.formParam("pincode", "201301")
 				.formParam("order_type", "sell")
 				.formParam("category", "mobile")

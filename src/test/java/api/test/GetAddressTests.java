@@ -20,6 +20,7 @@ public class GetAddressTests {
 		
 		GlobalVariables.homeAddressID =response.jsonPath().getString("addresses[0].party_address_id");
 		System.out.println("Home address id is " +GlobalVariables.homeAddressID);
+		
 		GlobalVariables.officeAddressID =response.jsonPath().getString("addresses[1].party_address_id");
 		System.out.println("Office address id is " +GlobalVariables.officeAddressID);
 		

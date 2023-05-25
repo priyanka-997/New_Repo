@@ -7,19 +7,11 @@ import io.restassured.response.Response;
 
 public class VerifyIfscTests {
 	
-	public static String ifscPayload() {
-		
-		String ifscPayload = "{\n"
-                +"\"ifsc\": \"icic0000876\"}";
-						
-		return ifscPayload;
-		
-	}	
 	
 	@Test(priority=11)
 	public static void testVerifyIfsc() {
 		
-		Response response =  VerifyIfscEndPoints.verifyIfsc(ifscPayload());
+		Response response =  VerifyIfscEndPoints.verifyIfsc();
 		
 		response.then().log().all();
 		Assert.assertEquals(response.jsonPath().getString("message"), "success");
