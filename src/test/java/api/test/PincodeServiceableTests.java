@@ -1,32 +1,17 @@
 package api.test;
 
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import api.endpoints.GlobalVariables;
 import api.endpoints.PincodeServiceableEndPoints;
-import api.payload.PincodeServiceablePojo;
 import io.restassured.response.Response;
 
 public class PincodeServiceableTests {
 	
-	PincodeServiceablePojo pincodePayload;
-	
-	@BeforeClass()
-	public void setupData() {
-		
-		pincodePayload= new PincodeServiceablePojo();
-		
-		pincodePayload.setPincode(201301);
-		pincodePayload.setCategory("mobile");
-		pincodePayload.setOrder_type("sell");
-		
-}
 
 	@Test(priority=4)
 	public void pincodeServiceable() {
-		Response response= PincodeServiceableEndPoints.pincodeServiceable(pincodePayload);
+		Response response= PincodeServiceableEndPoints.pincodeServiceable();
 		
 		response.then().log().all();
 	

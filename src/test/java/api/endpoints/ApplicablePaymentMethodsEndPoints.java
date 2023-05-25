@@ -8,13 +8,13 @@ import static io.restassured.RestAssured.given;
 public class ApplicablePaymentMethodsEndPoints {
 	
 	
-	public static Response applicablePaymentMathods() {
+	public static Response applicablePaymentMathods(String quoteIdPayload) {
 		
 		Response response = given()
 				
 				.contentType(ContentType.JSON)
 				.accept(ContentType.JSON)
-				.body(GlobalVariables.quote_id)
+				.body(quoteIdPayload)
 				
 				.when()
 				.post(Routes.applicablePaymentMethods_post_url);

@@ -1,34 +1,21 @@
 package api.test;
 
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import api.endpoints.GlobalVariables;
 import api.endpoints.LoginEndPoints;
-import api.payload.LoginPojo;
 import io.restassured.response.Response;
 
 public class LoginTests {
 	
 	
-		LoginPojo userPayload;
-		
-		@BeforeClass()
-		public void setupData() {
-			
-			userPayload= new LoginPojo();
-			
-			userPayload.setMobile_number("7905120105");
-			
-		}
-		
 		@Test(priority=1)
 		public void testLogin() {
 			
-		Response response= LoginEndPoints.Login(userPayload);
+		Response response= LoginEndPoints.Login();
 		response.then().log().all();
 		
+		Assert.assertEquals(response.jsonPath().getString("message" ), "OTP Sent to entered mobile number");
 		Assert.assertEquals(response.getStatusCode(), 200);
 			
 			
@@ -37,7 +24,7 @@ public class LoginTests {
 		@Test(priority=2)
 		public void testResendOtp() {
 			
-			Response response= LoginEndPoints.ResendOtp(userPayload);
+			Response response= LoginEndPoints.ResendOtp();
 			response.then().log().all();
 			
 			Assert.assertEquals(response.jsonPath().getString("message" ), "OTP Sent to entered mobile number");
@@ -50,13 +37,11 @@ public class LoginTests {
 		@Test(priority=3)
 		public void testVerifyOtp() {
 			
-			userPayload.setOtp(1111);
-			
-			
-			Response response= LoginEndPoints.verifyOtp(userPayload);
+			Response response= LoginEndPoints.verifyOtp();
 			response.then().log().all();
 			
 			Assert.assertEquals(response.getStatusCode(), 200);
+			Assert.assertEquals(response.jsonPath().getString("profile.mobile"), "7905120105");
 			
 			
 		GlobalVariables.token = response.jsonPath().getString("tokens.token") ;

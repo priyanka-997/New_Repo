@@ -1,34 +1,17 @@
 package api.test;
 
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import api.endpoints.DetectDeviceEndPoints;
 import api.endpoints.GlobalVariables;
-import api.payload.DetectDevicePojo;
 import io.restassured.response.Response;
 
 public class DetectDeviceTests {
 	
-	DetectDevicePojo detectDevicePayload;
-	
-	@BeforeClass()
-	
-	public void setupData() {
-		
-		 detectDevicePayload = new DetectDevicePojo();
-		
-		detectDevicePayload.setCpu_model("Qualcomm Technologies");
-		detectDevicePayload.setInternal_memory(4);
-		detectDevicePayload.setInternal_storage(64);
-		detectDevicePayload.setModel_number("RMX1971");
-	}
-	
 	@Test(priority=5)
 	public void testDetectDevice() {
 		
-	Response response = DetectDeviceEndPoints.detectDevice(detectDevicePayload);
+	Response response = DetectDeviceEndPoints.detectDevice();
 		
 		response.then().log().all();
 		
