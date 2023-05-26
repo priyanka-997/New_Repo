@@ -13,6 +13,9 @@ public class GlobalVariables {
 		public static String officeAddressID;
 		public static String time_slot;
 		public static String date;
+		public static int voucher_id;
+		public static String payment_method;
+		public static int order_id;
 		
 		
 		

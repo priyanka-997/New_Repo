@@ -135,6 +135,11 @@
     <version>5.2.3</version>
 </dependency>
 
- </dependencies>
+  	<dependency>
+  		<groupId>BDDFrameworkRestAssured</groupId>
+  		<artifactId>BDDFrameworkRestAssured</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
 
 </project>

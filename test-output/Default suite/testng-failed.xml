@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="api.test.ApplyCouponTests">
+      <class name="api.test.OrderAvailableTimeslotsTests">
         <methods>
-          <include name="testApplyCoupon"/>
-          <include name="testRevokeCoupon"/>
+          <include name="testOrderAvaialbleTimeslots"/>
         </methods>
-      </class> <!-- api.test.ApplyCouponTests -->
+      </class> <!-- api.test.OrderAvailableTimeslotsTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -39,4 +39,7 @@ public class Routes {
 	
 	//Apply Coupon
 	public static String apply_coupon_post_url = base_url +"/api/order-place/apply-coupon";	
+	
+	//Place Order
+	public static String place_order_post_url = base_url +"/api/order-place/place-order";
 }
