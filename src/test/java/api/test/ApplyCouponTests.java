@@ -23,4 +23,20 @@ public class ApplyCouponTests {
 				
 		
 	}
+	
+	@Test(priority=14)
+	public void testRevokeCoupon() {
+		
+		Response response = ApplyCouponEndPoints.revokeCoupon();
+		
+	    response.then().log().all();
+	    
+	    Assert.assertEquals(response.getStatusCode(),200);
+		Assert.assertEquals(response.jsonPath().getString("message"), "Coupon Removed Successfully");
+		Assert.assertEquals(response.jsonPath().getString("coupon_value"), "0");
+		
+				
+				
+		
+	}
 }
