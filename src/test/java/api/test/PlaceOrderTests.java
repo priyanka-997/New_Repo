@@ -18,6 +18,8 @@ public class PlaceOrderTests {
 			
 			GlobalVariables.order_id = response.jsonPath().getInt("order_id");
 			
+			
+			
 	}
 
 }
