@@ -59,4 +59,8 @@ public class Routes {
 	
 	//Cancel Order
 	public static String cancel_order_post_url = base_url +"/api/manage-order/cancel-order";
+	
+	//View Profile
+	public  static String view_profile_get_url = base_url +"/api/manage-profile/view-profile";
+	
 }
