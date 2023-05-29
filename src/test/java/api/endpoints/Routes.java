@@ -2,7 +2,6 @@ package api.endpoints;
 
 public class Routes {
 	
-	
 	public static String base_url = "https://qarapiv2.recycledevice.com";
 	
 	//Login
@@ -42,4 +41,10 @@ public class Routes {
 	
 	//Place Order
 	public static String place_order_post_url = base_url +"/api/order-place/place-order";
+	
+	//List Order
+	public static String list_order_get_url = base_url +"/api/manage-order/list-orders/open";
+	
+	//Order Details
+	public static String order_details_get_url = base_url +"/api/manage-order/orders-details/{order_id}";
 }
