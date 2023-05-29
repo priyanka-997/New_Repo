@@ -47,4 +47,16 @@ public class Routes {
 	
 	//Order Details
 	public static String order_details_get_url = base_url +"/api/manage-order/orders-details/{order_id}";
+	
+	//Reschedule Order
+	public static String reschedule_order_post_url = base_url +"/api/manage-order/reschedule-order";
+	
+	//Save Instructions
+	public static String save_instructions_post_url = base_url +"/api/manage-order/save-order-instructions";
+	
+	//Change Order Payment method
+	public static String change_payment_method_post_url = base_url +"/api/manage-order/change-order-payment-method";
+	
+	//Cancel Order
+	public static String cancel_order_post_url = base_url +"/api/manage-order/cancel-order";
 }
