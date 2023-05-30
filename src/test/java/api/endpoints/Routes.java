@@ -63,4 +63,9 @@ public class Routes {
 	//View Profile
 	public  static String view_profile_get_url = base_url +"/api/manage-profile/view-profile";
 	
+	//Update Profile
+	public static String update_profile_post_url = base_url +"/api/manage-profile/update-profile";
+	
+	//Notification List
+	public static String notification_list_get_url = base_url +"/api/notification-list";
 }
