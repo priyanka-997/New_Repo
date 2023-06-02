@@ -8,8 +8,7 @@ import api.endpoints.OrderAvailableTimeslotsEndPoints;
 import io.restassured.response.Response;
 
 public class OrderAvailableTimeslotsTests {
-	
-	
+		
 	
 	@Test(priority=12)
 	public void testOrderAvaialbleTimeslots() {
@@ -44,8 +43,7 @@ public class OrderAvailableTimeslotsTests {
 			 String Date = obj.getJSONArray("list").getJSONObject(i).get("list[0].date").toString();
 			String TimeSlot = obj.getJSONArray("list").getJSONObject(i).get("list[0].timeslot").toString();
 			
-			 
-			 
+			 	 
 			if (Date.equals("03-07-2023")) {
 		    	   
 				 break;
@@ -53,7 +51,6 @@ public class OrderAvailableTimeslotsTests {
 		    	if    (TimeSlot.equals("10 AM - 12 PM")) {
 			    	   
 		    		break;
-		
 	}
 
 }

@@ -75,5 +75,8 @@ public class Routes {
 	//RequestCallback
 	public static String request_callback_post_url = base_url +"/api/support/create-ticket";
 	
+	//Support Questions
+	public static String support_questions_post_url = base_url +"/api/support/questions";
+	
 	
 }

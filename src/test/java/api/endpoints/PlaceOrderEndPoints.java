@@ -7,9 +7,9 @@ import static io.restassured.RestAssured.given;
 public class PlaceOrderEndPoints {
 	
 	static String date = GlobalVariables.date;	
-   static  String pickup_date = "";
+   static  StringBuilder pickup_date ;
 	
-	public static String reverseDate() {
+	public static StringBuilder reverseDate() {
 		
 	    String[] date1=date.split("-");  
 	     
@@ -17,8 +17,10 @@ public class PlaceOrderEndPoints {
 		for(String d:date1){  
 	        StringBuilder date2=new StringBuilder(d);  
 	        date2.reverse();  
-	        date2.toString();
-			pickup_date=String.join(pickup_date, "-");  
+	        //date2.toString();
+			//pickup_date=String.join(pickup_date, "-");  
+	        
+	        pickup_date= date2.append("-");  
 	    }
 		return pickup_date;
 		
