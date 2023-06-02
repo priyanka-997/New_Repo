@@ -1,13 +1,14 @@
 package api.test;
 
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import api.endpoints.NotificationListEndPoints;
 import io.restassured.response.Response;
 
 public class NotificationListTests {
 	
-	
+	@Test(priority=25)
 public static void testNotificationList() {
 	
 	Response response = NotificationListEndPoints.notificationList();

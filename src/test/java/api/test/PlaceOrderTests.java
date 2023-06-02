@@ -10,7 +10,7 @@ import io.restassured.response.Response;
 public class PlaceOrderTests {
 	
 	@Test(priority=15)
-	public void testPlceOrder() {
+	public void testPlaceOrder() {
 		
 		Response response = PlaceOrderEndPoints.placeOrder();
 				

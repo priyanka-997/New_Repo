@@ -3,8 +3,27 @@ package api.endpoints;
 import io.restassured.response.Response;
 import static io.restassured.RestAssured.given;
 
+
 public class PlaceOrderEndPoints {
 	
+	static String date = GlobalVariables.date;	
+   static  String pickup_date = "";
+	
+	public static String reverseDate() {
+		
+	    String[] date1=date.split("-");  
+	     
+
+		for(String d:date1){  
+	        StringBuilder date2=new StringBuilder(d);  
+	        date2.reverse();  
+	        date2.toString();
+			pickup_date=String.join(pickup_date, "-");  
+	    }
+		return pickup_date;
+		
+	      
+	}
 	
 	public static Response placeOrder() {
 		
@@ -25,8 +44,9 @@ public class PlaceOrderEndPoints {
 				.formParam("bank_acc_name", "")
 				.formParam("bank_ifsc", "")
 				.formParam("bank_acc_no", "")
-				.formParam("pickup_date", GlobalVariables.date)
+				.formParam("pickup_date", pickup_date)
 				.formParam("pickup_timeslot", GlobalVariables.time_slot)
+				
 						
 				
 				.when()

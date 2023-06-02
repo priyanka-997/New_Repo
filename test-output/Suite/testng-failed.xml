@@ -3,21 +3,42 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="api.test.CancelOrderTests">
+        <methods>
+          <include name="testCancelSameOrder"/>
+          <include name="testCancelOrder"/>
+        </methods>
+      </class> <!-- api.test.CancelOrderTests -->
+      <class name="api.test.ChangePaymentMethodTests">
+        <methods>
+          <include name="testChangePaymentMethod"/>
+        </methods>
+      </class> <!-- api.test.ChangePaymentMethodTests -->
+      <class name="api.test.RescheduleOrderTests">
+        <methods>
+          <include name="testRescheduleOrder"/>
+        </methods>
+      </class> <!-- api.test.RescheduleOrderTests -->
       <class name="api.test.OrderAvailableTimeslotsTests">
         <methods>
           <include name="testOrderAvaialbleTimeslots"/>
         </methods>
       </class> <!-- api.test.OrderAvailableTimeslotsTests -->
-      <class name="api.test.ApplicablePaymentMethodsTests">
+      <class name="api.test.SaveInstructionsTests">
         <methods>
-          <include name="testApplicablePaymentMethods"/>
+          <include name="testSaveInstructions"/>
         </methods>
-      </class> <!-- api.test.ApplicablePaymentMethodsTests -->
-      <class name="api.test.GetCommonQuoteTests">
+      </class> <!-- api.test.SaveInstructionsTests -->
+      <class name="api.test.OrderDetailsTests">
         <methods>
-          <include name="testGetCommonQuotes"/>
+          <include name="testOrderDetails"/>
         </methods>
-      </class> <!-- api.test.GetCommonQuoteTests -->
+      </class> <!-- api.test.OrderDetailsTests -->
+      <class name="api.test.PlaceOrderTests">
+        <methods>
+          <include name="testPlceOrder"/>
+        </methods>
+      </class> <!-- api.test.PlaceOrderTests -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

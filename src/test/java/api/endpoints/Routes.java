@@ -68,4 +68,12 @@ public class Routes {
 	
 	//Notification List
 	public static String notification_list_get_url = base_url +"/api/notification-list";
+	
+	//Notification Count
+	public static String notification_count_get_url = base_url +"/api/notification-count";
+	
+	//RequestCallback
+	public static String request_callback_post_url = base_url +"/api/support/create-ticket";
+	
+	
 }

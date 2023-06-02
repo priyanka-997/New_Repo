@@ -1,145 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="14" passed="11" failed="3" skipped="0">
+<testng-results ignored="0" total="23" passed="15" failed="8" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-26T14:55:23 IST" name="Suite" finished-at="2023-05-26T14:55:32 IST" duration-ms="9592">
+  <suite started-at="2023-05-31T18:08:03 IST" name="Suite" finished-at="2023-05-31T18:08:18 IST" duration-ms="14628">
     <groups>
     </groups>
-    <test started-at="2023-05-26T14:55:23 IST" name="Test" finished-at="2023-05-26T14:55:32 IST" duration-ms="9592">
+    <test started-at="2023-05-31T18:08:03 IST" name="Test" finished-at="2023-05-31T18:08:18 IST" duration-ms="14628">
       <class name="api.test.PincodeServiceableTests">
-        <test-method signature="pincodeServiceable()[pri:4, instance:api.test.PincodeServiceableTests@957e06]" started-at="2023-05-26T14:55:27 IST" name="pincodeServiceable" finished-at="2023-05-26T14:55:27 IST" duration-ms="372" status="PASS">
+        <test-method signature="pincodeServiceable()[pri:4, instance:api.test.PincodeServiceableTests@61001b64]" started-at="2023-05-31T18:08:10 IST" name="pincodeServiceable" finished-at="2023-05-31T18:08:10 IST" duration-ms="595" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pincodeServiceable -->
       </class> <!-- api.test.PincodeServiceableTests -->
-      <class name="api.test.GetAddressTests">
-        <test-method signature="testGetAddress()[pri:8, instance:api.test.GetAddressTests@21282ed8]" started-at="2023-05-26T14:55:30 IST" name="testGetAddress" finished-at="2023-05-26T14:55:30 IST" duration-ms="375" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetAddress -->
-      </class> <!-- api.test.GetAddressTests -->
       <class name="api.test.ApplyCouponTests">
-        <test-method signature="testApplyCoupon()[pri:13, instance:api.test.ApplyCouponTests@550dbc7a]" started-at="2023-05-26T14:55:29 IST" name="testApplyCoupon" finished-at="2023-05-26T14:55:30 IST" duration-ms="304" status="PASS">
+        <test-method signature="testApplyCoupon()[pri:13, instance:api.test.ApplyCouponTests@2dc54ad4]" started-at="2023-05-31T18:08:16 IST" name="testApplyCoupon" finished-at="2023-05-31T18:08:16 IST" duration-ms="305" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testApplyCoupon -->
-        <test-method signature="testRevokeCoupon()[pri:14, instance:api.test.ApplyCouponTests@550dbc7a]" started-at="2023-05-26T14:55:30 IST" name="testRevokeCoupon" finished-at="2023-05-26T14:55:30 IST" duration-ms="344" status="PASS">
+        <test-method signature="testRevokeCoupon()[pri:14, instance:api.test.ApplyCouponTests@2dc54ad4]" started-at="2023-05-31T18:08:16 IST" name="testRevokeCoupon" finished-at="2023-05-31T18:08:16 IST" duration-ms="351" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRevokeCoupon -->
       </class> <!-- api.test.ApplyCouponTests -->
-      <class name="api.test.OrderAvailableTimeslotsTests">
-        <test-method signature="testOrderAvaialbleTimeslots()[pri:12, instance:api.test.OrderAvailableTimeslotsTests@66f57048]" started-at="2023-05-26T14:55:29 IST" name="testOrderAvaialbleTimeslots" finished-at="2023-05-26T14:55:29 IST" duration-ms="431" status="FAIL">
-          <exception class="java.time.format.DateTimeParseException">
-            <message>
-              <![CDATA[Text '11-07-2023' could not be parsed at index 2]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.time.format.DateTimeParseException: Text '11-07-2023' could not be parsed at index 2
-at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2052)
-at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1954)
-at java.base/java.time.LocalDate.parse(LocalDate.java:430)
-at api.test.OrderAvailableTimeslotsTests.testOrderAvaialbleTimeslots(OrderAvailableTimeslotsTests.java:32)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.time.format.DateTimeParseException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testOrderAvaialbleTimeslots -->
-      </class> <!-- api.test.OrderAvailableTimeslotsTests -->
       <class name="api.test.GetCommonQuoteTests">
-        <test-method signature="testGetCommonQuotes()[pri:7, instance:api.test.GetCommonQuoteTests@5a56cdac]" started-at="2023-05-26T14:55:23 IST" name="testGetCommonQuotes" finished-at="2023-05-26T14:55:27 IST" duration-ms="3797" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Success] but found [Invalid or missing parameters]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Success] but found [Invalid or missing parameters]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at api.test.GetCommonQuoteTests.testGetCommonQuotes(GetCommonQuoteTests.java:19)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="testGetCommonQuotes()[pri:7, instance:api.test.GetCommonQuoteTests@26e356f0]" started-at="2023-05-31T18:08:12 IST" name="testGetCommonQuotes" finished-at="2023-05-31T18:08:13 IST" duration-ms="733" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetCommonQuotes -->
       </class> <!-- api.test.GetCommonQuoteTests -->
-      <class name="api.test.ApplicablePaymentMethodsTests">
-        <test-method signature="testApplicablePaymentMethods()[pri:10, instance:api.test.ApplicablePaymentMethodsTests@2c1b194a]" started-at="2023-05-26T14:55:28 IST" name="testApplicablePaymentMethods" finished-at="2023-05-26T14:55:29 IST" duration-ms="302" status="FAIL">
-          <exception class="java.lang.AssertionError">
+      <class name="api.test.LoginTests">
+        <test-method signature="testLogin()[pri:1, instance:api.test.LoginTests@32502377]" started-at="2023-05-31T18:08:03 IST" name="testLogin" finished-at="2023-05-31T18:08:09 IST" duration-ms="5346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method signature="testResendOtp()[pri:2, instance:api.test.LoginTests@32502377]" started-at="2023-05-31T18:08:09 IST" name="testResendOtp" finished-at="2023-05-31T18:08:09 IST" duration-ms="493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResendOtp -->
+        <test-method signature="testVerifyOtp()[pri:3, instance:api.test.LoginTests@32502377]" started-at="2023-05-31T18:08:09 IST" name="testVerifyOtp" finished-at="2023-05-31T18:08:10 IST" duration-ms="485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVerifyOtp -->
+      </class> <!-- api.test.LoginTests -->
+      <class name="api.test.OrderDetailsTests">
+        <test-method signature="testOrderDetails()[pri:17, instance:api.test.OrderDetailsTests@59505b48]" started-at="2023-05-31T18:08:18 IST" name="testOrderDetails" finished-at="2023-05-31T18:08:18 IST" duration-ms="5" status="FAIL">
+          <exception class="java.lang.ClassCastException">
             <message>
-              <![CDATA[expected [Success] but found [Invalid or missing parameters]]]>
+              <![CDATA[class io.restassured.internal.RequestSpecificationImpl cannot be cast to class io.restassured.response.Response (io.restassured.internal.RequestSpecificationImpl and io.restassured.response.Response are in unnamed module of loader 'app')]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Success] but found [Invalid or missing parameters]
+              <![CDATA[java.lang.ClassCastException: class io.restassured.internal.RequestSpecificationImpl cannot be cast to class io.restassured.response.Response (io.restassured.internal.RequestSpecificationImpl and io.restassured.response.Response are in unnamed module of loader 'app')
+at api.endpoints.OrderDetailsEndPoints.orderDeatails(OrderDetailsEndPoints.java:10)
+at api.test.OrderDetailsTests.testOrderDetails(OrderDetailsTests.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOrderDetails -->
+      </class> <!-- api.test.OrderDetailsTests -->
+      <class name="api.test.DetectDeviceTests">
+        <test-method signature="testDetectDevice()[pri:5, instance:api.test.DetectDeviceTests@4310d43]" started-at="2023-05-31T18:08:10 IST" name="testDetectDevice" finished-at="2023-05-31T18:08:12 IST" duration-ms="1434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDetectDevice -->
+      </class> <!-- api.test.DetectDeviceTests -->
+      <class name="api.test.PlaceOrderTests">
+        <test-method signature="testPlceOrder()[pri:15, instance:api.test.PlaceOrderTests@4659191b]" started-at="2023-05-31T18:08:16 IST" name="testPlceOrder" finished-at="2023-05-31T18:08:17 IST" duration-ms="305" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [422]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [422]
 at org.testng.Assert.fail(Assert.java:110)
 at org.testng.Assert.failNotEquals(Assert.java:1577)
 at org.testng.Assert.assertEqualsImpl(Assert.java:149)
 at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at api.test.ApplicablePaymentMethodsTests.testApplicablePaymentMethods(ApplicablePaymentMethodsTests.java:17)
+at org.testng.Assert.assertEquals(Assert.java:1418)
+at org.testng.Assert.assertEquals(Assert.java:1382)
+at org.testng.Assert.assertEquals(Assert.java:1428)
+at api.test.PlaceOrderTests.testPlceOrder(PlaceOrderTests.java:19)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -173,46 +142,328 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testApplicablePaymentMethods -->
-      </class> <!-- api.test.ApplicablePaymentMethodsTests -->
-      <class name="api.test.LoginTests">
-        <test-method signature="testLogin()[pri:1, instance:api.test.LoginTests@32502377]" started-at="2023-05-26T14:55:27 IST" name="testLogin" finished-at="2023-05-26T14:55:28 IST" duration-ms="496" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method signature="testResendOtp()[pri:2, instance:api.test.LoginTests@32502377]" started-at="2023-05-26T14:55:28 IST" name="testResendOtp" finished-at="2023-05-26T14:55:28 IST" duration-ms="476" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testResendOtp -->
-        <test-method signature="testVerifyOtp()[pri:3, instance:api.test.LoginTests@32502377]" started-at="2023-05-26T14:55:28 IST" name="testVerifyOtp" finished-at="2023-05-26T14:55:28 IST" duration-ms="386" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testVerifyOtp -->
-      </class> <!-- api.test.LoginTests -->
-      <class name="api.test.DetectDeviceTests">
-        <test-method signature="testDetectDevice()[pri:5, instance:api.test.DetectDeviceTests@36916eb0]" started-at="2023-05-26T14:55:30 IST" name="testDetectDevice" finished-at="2023-05-26T14:55:31 IST" duration-ms="929" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDetectDevice -->
-      </class> <!-- api.test.DetectDeviceTests -->
-      <class name="api.test.VerifyIfscTests">
-        <test-method signature="testVerifyIfsc()[pri:11, instance:api.test.VerifyIfscTests@7bab3f1a]" started-at="2023-05-26T14:55:31 IST" name="testVerifyIfsc" finished-at="2023-05-26T14:55:32 IST" duration-ms="390" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testVerifyIfsc -->
-      </class> <!-- api.test.VerifyIfscTests -->
-      <class name="api.test.ListVariantsTests">
-        <test-method signature="testListVariantQuestions()[pri:6, instance:api.test.ListVariantsTests@23c30a20]" started-at="2023-05-26T14:55:32 IST" name="testListVariantQuestions" finished-at="2023-05-26T14:55:32 IST" duration-ms="503" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testListVariantQuestions -->
-      </class> <!-- api.test.ListVariantsTests -->
+        </test-method> <!-- testPlceOrder -->
+      </class> <!-- api.test.PlaceOrderTests -->
       <class name="api.test.AddUpdateAddressTests">
-        <test-method signature="testAddUpdateAddress()[pri:9, instance:api.test.AddUpdateAddressTests@437da279]" started-at="2023-05-26T14:55:32 IST" name="testAddUpdateAddress" finished-at="2023-05-26T14:55:32 IST" duration-ms="355" status="PASS">
+        <test-method signature="testAddUpdateAddress()[pri:9, instance:api.test.AddUpdateAddressTests@4b8ee4de]" started-at="2023-05-31T18:08:14 IST" name="testAddUpdateAddress" finished-at="2023-05-31T18:08:14 IST" duration-ms="313" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddUpdateAddress -->
       </class> <!-- api.test.AddUpdateAddressTests -->
+      <class name="api.test.ListVariantsTests">
+        <test-method signature="testListVariantQuestions()[pri:6, instance:api.test.ListVariantsTests@54a7079e]" started-at="2023-05-31T18:08:12 IST" name="testListVariantQuestions" finished-at="2023-05-31T18:08:12 IST" duration-ms="590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testListVariantQuestions -->
+      </class> <!-- api.test.ListVariantsTests -->
+      <class name="api.test.RescheduleOrderTests">
+        <test-method signature="testRescheduleOrder()[pri:18, instance:api.test.RescheduleOrderTests@4b0d79fc]" started-at="2023-05-31T18:08:17 IST" name="testRescheduleOrder" finished-at="2023-05-31T18:08:17 IST" duration-ms="280" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Order has been rescheduled] but found [Invalid or missing parameters]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Order has been rescheduled] but found [Invalid or missing parameters]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at api.test.RescheduleOrderTests.testRescheduleOrder(RescheduleOrderTests.java:17)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRescheduleOrder -->
+      </class> <!-- api.test.RescheduleOrderTests -->
+      <class name="api.test.ListOrdersTests">
+        <test-method signature="testListOrders()[pri:16, instance:api.test.ListOrdersTests@d9345cd]" started-at="2023-05-31T18:08:17 IST" name="testListOrders" finished-at="2023-05-31T18:08:18 IST" duration-ms="295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testListOrders -->
+      </class> <!-- api.test.ListOrdersTests -->
+      <class name="api.test.GetAddressTests">
+        <test-method signature="testGetAddress()[pri:8, instance:api.test.GetAddressTests@47d9a273]" started-at="2023-05-31T18:08:13 IST" name="testGetAddress" finished-at="2023-05-31T18:08:14 IST" duration-ms="595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAddress -->
+      </class> <!-- api.test.GetAddressTests -->
+      <class name="api.test.OrderAvailableTimeslotsTests">
+        <test-method signature="testOrderAvaialbleTimeslots()[pri:12, instance:api.test.OrderAvailableTimeslotsTests@1151e434]" started-at="2023-05-31T18:08:15 IST" name="testOrderAvaialbleTimeslots" finished-at="2023-05-31T18:08:16 IST" duration-ms="911" status="FAIL">
+          <exception class="org.json.JSONException">
+            <message>
+              <![CDATA[JSONObject["list[0].date"] not found.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.json.JSONException: JSONObject["list[0].date"] not found.
+at org.json.JSONObject.get(JSONObject.java:570)
+at api.test.OrderAvailableTimeslotsTests.testOrderAvaialbleTimeslots(OrderAvailableTimeslotsTests.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.json.JSONException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOrderAvaialbleTimeslots -->
+      </class> <!-- api.test.OrderAvailableTimeslotsTests -->
+      <class name="api.test.ViewProfileTests">
+        <test-method signature="testViewProfile()[pri:23, instance:api.test.ViewProfileTests@4c1909a3]" started-at="2023-05-31T18:08:17 IST" name="testViewProfile" finished-at="2023-05-31T18:08:17 IST" duration-ms="284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testViewProfile -->
+      </class> <!-- api.test.ViewProfileTests -->
+      <class name="api.test.ApplicablePaymentMethodsTests">
+        <test-method signature="testApplicablePaymentMethods()[pri:10, instance:api.test.ApplicablePaymentMethodsTests@27f981c6]" started-at="2023-05-31T18:08:14 IST" name="testApplicablePaymentMethods" finished-at="2023-05-31T18:08:14 IST" duration-ms="416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApplicablePaymentMethods -->
+      </class> <!-- api.test.ApplicablePaymentMethodsTests -->
+      <class name="api.test.ChangePaymentMethodTests">
+        <test-method signature="testChangePaymentMethod()[pri:20, instance:api.test.ChangePaymentMethodTests@55634720]" started-at="2023-05-31T18:08:17 IST" name="testChangePaymentMethod" finished-at="2023-05-31T18:08:17 IST" duration-ms="12" status="FAIL">
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[class io.restassured.internal.RequestSpecificationImpl cannot be cast to class io.restassured.response.Response (io.restassured.internal.RequestSpecificationImpl and io.restassured.response.Response are in unnamed module of loader 'app')]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: class io.restassured.internal.RequestSpecificationImpl cannot be cast to class io.restassured.response.Response (io.restassured.internal.RequestSpecificationImpl and io.restassured.response.Response are in unnamed module of loader 'app')
+at api.endpoints.ChangePaymentMethodEndPoints.changePaymentMethod(ChangePaymentMethodEndPoints.java:10)
+at api.test.ChangePaymentMethodTests.testChangePaymentMethod(ChangePaymentMethodTests.java:14)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePaymentMethod -->
+      </class> <!-- api.test.ChangePaymentMethodTests -->
+      <class name="api.test.CancelOrderTests">
+        <test-method signature="testCancelOrder()[pri:21, instance:api.test.CancelOrderTests@428640fa]" started-at="2023-05-31T18:08:17 IST" name="testCancelOrder" finished-at="2023-05-31T18:08:17 IST" duration-ms="4" status="FAIL">
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[class io.restassured.internal.RequestSpecificationImpl cannot be cast to class io.restassured.response.Response (io.restassured.internal.RequestSpecificationImpl and io.restassured.response.Response are in unnamed module of loader 'app')]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: class io.restassured.internal.RequestSpecificationImpl cannot be cast to class io.restassured.response.Response (io.restassured.internal.RequestSpecificationImpl and io.restassured.response.Response are in unnamed module of loader 'app')
+at api.endpoints.CancelOrderEndPoints.cancelOrder(CancelOrderEndPoints.java:10)
+at api.test.CancelOrderTests.testCancelOrder(CancelOrderTests.java:15)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCancelOrder -->
+        <test-method signature="testCancelSameOrder()[pri:22, instance:api.test.CancelOrderTests@428640fa]" started-at="2023-05-31T18:08:17 IST" name="testCancelSameOrder" finished-at="2023-05-31T18:08:17 IST" duration-ms="7" status="FAIL">
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[class io.restassured.internal.RequestSpecificationImpl cannot be cast to class io.restassured.response.Response (io.restassured.internal.RequestSpecificationImpl and io.restassured.response.Response are in unnamed module of loader 'app')]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: class io.restassured.internal.RequestSpecificationImpl cannot be cast to class io.restassured.response.Response (io.restassured.internal.RequestSpecificationImpl and io.restassured.response.Response are in unnamed module of loader 'app')
+at api.endpoints.CancelOrderEndPoints.cancelOrder(CancelOrderEndPoints.java:10)
+at api.test.CancelOrderTests.testCancelSameOrder(CancelOrderTests.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCancelSameOrder -->
+      </class> <!-- api.test.CancelOrderTests -->
+      <class name="api.test.SaveInstructionsTests">
+        <test-method signature="testSaveInstructions()[pri:19, instance:api.test.SaveInstructionsTests@2d710f1a]" started-at="2023-05-31T18:08:18 IST" name="testSaveInstructions" finished-at="2023-05-31T18:08:18 IST" duration-ms="243" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Instructions have been saved] but found [Order does not exist]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Instructions have been saved] but found [Order does not exist]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at api.test.SaveInstructionsTests.testSaveInstructions(SaveInstructionsTests.java:17)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSaveInstructions -->
+      </class> <!-- api.test.SaveInstructionsTests -->
+      <class name="api.test.VerifyIfscTests">
+        <test-method signature="testVerifyIfsc()[pri:11, instance:api.test.VerifyIfscTests@1b11171f]" started-at="2023-05-31T18:08:14 IST" name="testVerifyIfsc" finished-at="2023-05-31T18:08:15 IST" duration-ms="342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVerifyIfsc -->
+      </class> <!-- api.test.VerifyIfscTests -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
