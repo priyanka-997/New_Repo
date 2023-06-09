@@ -8,11 +8,6 @@
           <include name="testSaveInstructions"/>
         </methods>
       </class> <!-- api.test.SaveInstructionsTests -->
-      <class name="api.test.RequestCallbackTests">
-        <methods>
-          <include name="testCreateTicket"/>
-        </methods>
-      </class> <!-- api.test.RequestCallbackTests -->
       <class name="api.test.ChangePaymentMethodTests">
         <methods>
           <include name="testChangePaymentMethod"/>

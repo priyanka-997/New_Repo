@@ -1,7 +1,6 @@
 package api.test;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
+
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -11,7 +10,7 @@ import io.restassured.response.Response;
 
 public class OrderAvailableTimeslotsTests {
 	
-	public static String pickup_date; //= GlobalVariables.pickup_date ;
+	//public static String pickup_date; //= GlobalVariables.pickup_date ;
 	
 	@Test(priority=12)
 	public void testOrderAvaialbleTimeslots() {
@@ -27,10 +26,10 @@ public class OrderAvailableTimeslotsTests {
 		System.out.println("Available date is " +GlobalVariables.date);
 		
 			
-			DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+			/*DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 		        String date = GlobalVariables.date;
 		        LocalDate pickup_date = LocalDate.parse(date, formatter);
-		        System.out.println("Formatted date is " +pickup_date); 
+		        System.out.println("Formatted date is " +pickup_date); */
 				
 			
 			/*LocalDate ld = LocalDate.parse(GlobalVariables.date);

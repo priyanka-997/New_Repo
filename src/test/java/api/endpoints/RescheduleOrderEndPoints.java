@@ -16,7 +16,7 @@ public class RescheduleOrderEndPoints {
 				
 				.formParam("order_id", GlobalVariables.order_id)
 				.formParam("reason", "Changed My Mind")
-				.formParam("date", GlobalVariables.date)
+				.formParam("date", GlobalVariables.pickup_date)
 				.formParam("time", GlobalVariables.time_slot)
 				
 				.when()
