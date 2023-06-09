@@ -3,15 +3,19 @@ package api.endpoints;
 import io.restassured.response.Response;
 import static io.restassured.RestAssured.given;
 
+import api.test.OrderAvailableTimeslotsTests;
+
+
 
 public class PlaceOrderEndPoints {
+
 	
-	static String date = GlobalVariables.date;	
+	/*	static String date = GlobalVariables.date;	
    static  StringBuilder pickup_date ;
 	
-	public static StringBuilder reverseDate() {
+    public static StringBuilder reverseDate() {
 		
-	    String[] date1=date.split("-");  
+	   /* String[] date1=date.split("-");  
 	     
 
 		for(String d:date1){  
@@ -22,10 +26,40 @@ public class PlaceOrderEndPoints {
 	        
 	        pickup_date= date2.append("-");  
 	    }
-		return pickup_date;
+		return pickup_date;   */
+	
+	/*static String pickup_date;
+	
+	public static void reverseDate() {
 		
-	      
+		DateTimeFormatter fIn = DateTimeFormatter.ofPattern( "dd-mm-yyyy" , Locale.UK );  
+		LocalDate ld = LocalDate.parse( GlobalVariables.date , fIn );
+		
+		DateTimeFormatter fOut = DateTimeFormatter.ofPattern( "yyyy-mm-dd" , Locale.UK );
+		pickup_date = ld.format( fOut );
+		
+		System.out.println("Available formatted date is " +pickup_date);
+		
+	}*/
+	/*static String pickup_date;
+	
+	public void reverseDate() {
+		
+		
+		
+		LocalDate ld = LocalDate.parse(GlobalVariables.date);
+        pickup_date = DateTimeFormatter.ofPattern("yyyy-MM-dd", Locale.ENGLISH)
+                                  .format(ld);
+        System.out.println("New formatted date is: " +pickup_date);
 	}
+	*/
+	/*public void reverseDate() {
+		
+		 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+	        String date = GlobalVariables.date;
+	        LocalDate pickup_date = LocalDate.parse(date, formatter);
+	        System.out.println("Formatted date is " +pickup_date);
+		}*/
 	
 	public static Response placeOrder() {
 		
@@ -46,7 +80,7 @@ public class PlaceOrderEndPoints {
 				.formParam("bank_acc_name", "")
 				.formParam("bank_ifsc", "")
 				.formParam("bank_acc_no", "")
-				.formParam("pickup_date", pickup_date)
+				.formParam("pickup_date", OrderAvailableTimeslotsTests.pickup_date)
 				.formParam("pickup_timeslot", GlobalVariables.time_slot)
 				
 						

@@ -1,6 +1,8 @@
 package api.test;
 
-import org.json.JSONObject;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import api.endpoints.GlobalVariables;
@@ -8,7 +10,8 @@ import api.endpoints.OrderAvailableTimeslotsEndPoints;
 import io.restassured.response.Response;
 
 public class OrderAvailableTimeslotsTests {
-		
+	
+	public static String pickup_date; //= GlobalVariables.pickup_date ;
 	
 	@Test(priority=12)
 	public void testOrderAvaialbleTimeslots() {
@@ -23,19 +26,56 @@ public class OrderAvailableTimeslotsTests {
 		GlobalVariables.date = response.jsonPath().getString("list[2].date");
 		System.out.println("Available date is " +GlobalVariables.date);
 		
-		/*DateTimeFormatter fIn = DateTimeFormatter.ofPattern( "dd/MM/yyyy" , Locale.UK );  
-		LocalDate ld = LocalDate.parse( GlobalVariables.date , fIn );
+			
+			DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+		        String date = GlobalVariables.date;
+		        LocalDate pickup_date = LocalDate.parse(date, formatter);
+		        System.out.println("Formatted date is " +pickup_date); 
+				
+			
+			/*LocalDate ld = LocalDate.parse(GlobalVariables.date);
+	        pickup_date = DateTimeFormatter.ofPattern("yyyy-MM-dd", Locale.ENGLISH).format(ld);
+	        System.out.println("New formatted date is: " +pickup_date); */
 		
-		DateTimeFormatter fOut = DateTimeFormatter.ofPattern( "yyyy/MM/dd" , Locale.UK );
-		String output = ld.format( fOut );
+	        
+	     /*   DateTimeFormatter f = new DateTimeFormatterBuilder().parseCaseInsensitive()
+	                .append(DateTimeFormatter.ofPattern("y-m-d")).toFormatter();
+	        try {
+	            LocalDate pickup_date = LocalDate.parse(GlobalVariables.date, f);
+	            System.out.println(pickup_date); 
+	        } catch (DateTimeParseException e) {
+	            
+	        }*/
+	        
+	        
+	       /* String date = GlobalVariables.date;
+	        
+	        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd-MM-yyyy", Locale.US);
+	        LocalDateTime pickup_date = LocalDateTime.parse(date, dtf);
+	       
+	        System.out.println(pickup_date);*/
 		
-		System.out.println("Available date is " +output);*/
+		/*static String pickup_date;
+		
+		public void reverseDate() {
+			
+			 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+		        String date = GlobalVariables.date;
+		        LocalDate pickup_date = LocalDate.parse(date, formatter);
+		        System.out.println("Formatted value is "+pickup_date);
+			}
+		*/
+		
+		
 		
 		
 		GlobalVariables.time_slot = response.jsonPath().getString("list[2].timeslot");
 		System.out.println("Available timeslot is " +GlobalVariables.time_slot);
 		
-		JSONObject obj = new JSONObject(response.asString());
+		
+		
+		
+		/*JSONObject obj = new JSONObject(response.asString());
 		
 		for(int i =0; i<obj.getJSONArray("list").length(); i++) {
 			 
@@ -53,5 +93,5 @@ public class OrderAvailableTimeslotsTests {
 		    		break;
 	}
 
-}
+}*/
 }}

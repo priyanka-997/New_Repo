@@ -78,5 +78,17 @@ public class Routes {
 	//Support Questions
 	public static String support_questions_post_url = base_url +"/api/support/questions";
 	
+	//Create Ticket
+	public static String create_ticket_post_url = base_url +"/api/support/create-ticket";
+	
+	//Open Tickets
+	public static String open_ticket_get_url = base_url +"/api/support/open-tickets";
+	
+	//Closed Tickets
+	public static String closed_tickst_get_url = base_url +"/api/support/closed-tickets";
+	
+	//Faqs
+	public static String faqs_post_url = base_url +"/api/order-place/list-api-faqs-brands-models-categories-variants-variant-cities-specs";
+	
 	
 }

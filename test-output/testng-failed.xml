@@ -3,42 +3,47 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="api.test.SaveInstructionsTests">
+        <methods>
+          <include name="testSaveInstructions"/>
+        </methods>
+      </class> <!-- api.test.SaveInstructionsTests -->
+      <class name="api.test.RequestCallbackTests">
+        <methods>
+          <include name="testCreateTicket"/>
+        </methods>
+      </class> <!-- api.test.RequestCallbackTests -->
+      <class name="api.test.ChangePaymentMethodTests">
+        <methods>
+          <include name="testChangePaymentMethod"/>
+        </methods>
+      </class> <!-- api.test.ChangePaymentMethodTests -->
+      <class name="api.test.UpdateProfileTests">
+        <methods>
+          <include name="testUpdateProfile"/>
+        </methods>
+      </class> <!-- api.test.UpdateProfileTests -->
       <class name="api.test.CancelOrderTests">
         <methods>
           <include name="testCancelSameOrder"/>
           <include name="testCancelOrder"/>
         </methods>
       </class> <!-- api.test.CancelOrderTests -->
-      <class name="api.test.ChangePaymentMethodTests">
-        <methods>
-          <include name="testChangePaymentMethod"/>
-        </methods>
-      </class> <!-- api.test.ChangePaymentMethodTests -->
       <class name="api.test.RescheduleOrderTests">
         <methods>
           <include name="testRescheduleOrder"/>
         </methods>
       </class> <!-- api.test.RescheduleOrderTests -->
-      <class name="api.test.OrderAvailableTimeslotsTests">
+      <class name="api.test.PlaceOrderTests">
         <methods>
-          <include name="testOrderAvaialbleTimeslots"/>
+          <include name="testPlaceOrder"/>
         </methods>
-      </class> <!-- api.test.OrderAvailableTimeslotsTests -->
-      <class name="api.test.SaveInstructionsTests">
-        <methods>
-          <include name="testSaveInstructions"/>
-        </methods>
-      </class> <!-- api.test.SaveInstructionsTests -->
+      </class> <!-- api.test.PlaceOrderTests -->
       <class name="api.test.OrderDetailsTests">
         <methods>
           <include name="testOrderDetails"/>
         </methods>
       </class> <!-- api.test.OrderDetailsTests -->
-      <class name="api.test.PlaceOrderTests">
-        <methods>
-          <include name="testPlceOrder"/>
-        </methods>
-      </class> <!-- api.test.PlaceOrderTests -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
