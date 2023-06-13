@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>21/8/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>20/9/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jun 09 18:10:21 IST 2023</td>
+<td>Started on:</td><td>Sun Jun 11 14:54:02 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>14 seconds (14835 ms)</td>
+<tr><td>Total time:</td><td>24 seconds (24495 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,6 +76,137 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='api.test.CancelOrderTests.testCancelOrder()'><b>testCancelOrder</b><br>Test class: api.test.CancelOrderTests</td>
+<td><div><pre>java.lang.ClassCastException: class io.restassured.internal.RequestSpecificationImpl cannot be cast to class io.restassured.response.Response (io.restassured.internal.RequestSpecificationImpl and io.restassured.response.Response are in unnamed module of loader &apos;app&apos;)
+	at api.endpoints.CancelOrderEndPoints.cancelOrder(CancelOrderEndPoints.java:10)
+	at api.test.CancelOrderTests.testCancelOrder(CancelOrderTests.java:15)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1123913519", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1123913519'><pre>java.lang.ClassCastException: class io.restassured.internal.RequestSpecificationImpl cannot be cast to class io.restassured.response.Response (io.restassured.internal.RequestSpecificationImpl and io.restassured.response.Response are in unnamed module of loader &apos;app&apos;)
+	at api.endpoints.CancelOrderEndPoints.cancelOrder(CancelOrderEndPoints.java:10)
+	at api.test.CancelOrderTests.testCancelOrder(CancelOrderTests.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>api.test.CancelOrderTests@52b1beb6</td></tr>
+<tr>
+<td title='api.test.RescheduleOrderTests.testRescheduleOrder()'><b>testRescheduleOrder</b><br>Test class: api.test.RescheduleOrderTests</td>
+<td><div><pre>java.lang.AssertionError: expected [Order has been rescheduled] but found [Invalid or missing parameters]
+	at api.test.RescheduleOrderTests.testRescheduleOrder(RescheduleOrderTests.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace462398202", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace462398202'><pre>java.lang.AssertionError: expected [Order has been rescheduled] but found [Invalid or missing parameters]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at api.test.RescheduleOrderTests.testRescheduleOrder(RescheduleOrderTests.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>api.test.RescheduleOrderTests@72e5a8e</td></tr>
+<tr>
+<td title='api.test.SaveInstructionsTests.testSaveInstructions()'><b>testSaveInstructions</b><br>Test class: api.test.SaveInstructionsTests</td>
+<td><div><pre>java.lang.AssertionError: expected [Instructions have been saved] but found [Order does not exist]
+	at api.test.SaveInstructionsTests.testSaveInstructions(SaveInstructionsTests.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace992596844", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace992596844'><pre>java.lang.AssertionError: expected [Instructions have been saved] but found [Order does not exist]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at api.test.SaveInstructionsTests.testSaveInstructions(SaveInstructionsTests.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>api.test.SaveInstructionsTests@273e7444</td></tr>
+<tr>
 <td title='api.test.UpdateProfileTests.testUpdateProfile()'><b>testUpdateProfile</b><br>Test class: api.test.UpdateProfileTests</td>
 <td><div><pre>java.lang.NumberFormatException: For input string: &quot;Profile has been updated&quot;
 	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
@@ -90,8 +221,8 @@ function toggleAllBoxes() {
 	at io.restassured.path.json.JsonPath.getShort(JsonPath.java:287)
 	at api.test.UpdateProfileTests.testUpdateProfile(UpdateProfileTests.java:19)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace631436338", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace631436338'><pre>java.lang.NumberFormatException: For input string: &quot;Profile has been updated&quot;
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1801848529", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1801848529'><pre>java.lang.NumberFormatException: For input string: &quot;Profile has been updated&quot;
 	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
 	at java.base/java.lang.Integer.parseInt(Integer.java:668)
 	at java.base/java.lang.Short.parseShort(Short.java:137)
@@ -140,8 +271,8 @@ function toggleAllBoxes() {
 	at api.endpoints.ChangePaymentMethodEndPoints.changePaymentMethod(ChangePaymentMethodEndPoints.java:10)
 	at api.test.ChangePaymentMethodTests.testChangePaymentMethod(ChangePaymentMethodTests.java:14)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2074865054", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2074865054'><pre>java.lang.ClassCastException: class io.restassured.internal.RequestSpecificationImpl cannot be cast to class io.restassured.response.Response (io.restassured.internal.RequestSpecificationImpl and io.restassured.response.Response are in unnamed module of loader &apos;app&apos;)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace306693934", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace306693934'><pre>java.lang.ClassCastException: class io.restassured.internal.RequestSpecificationImpl cannot be cast to class io.restassured.response.Response (io.restassured.internal.RequestSpecificationImpl and io.restassured.response.Response are in unnamed module of loader &apos;app&apos;)
 	at api.endpoints.ChangePaymentMethodEndPoints.changePaymentMethod(ChangePaymentMethodEndPoints.java:10)
 	at api.test.ChangePaymentMethodTests.testChangePaymentMethod(ChangePaymentMethodTests.java:14)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -176,15 +307,102 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>api.test.ChangePaymentMethodTests@7d4f9aae</td></tr>
 <tr>
-<td title='api.test.CancelOrderTests.testCancelOrder()'><b>testCancelOrder</b><br>Test class: api.test.CancelOrderTests</td>
+<td title='api.test.OrderDetailsTests.testOrderDetails()'><b>testOrderDetails</b><br>Test class: api.test.OrderDetailsTests</td>
+<td><div><pre>java.lang.ClassCastException: class io.restassured.internal.RequestSpecificationImpl cannot be cast to class io.restassured.response.Response (io.restassured.internal.RequestSpecificationImpl and io.restassured.response.Response are in unnamed module of loader &apos;app&apos;)
+	at api.endpoints.OrderDetailsEndPoints.orderDeatails(OrderDetailsEndPoints.java:10)
+	at api.test.OrderDetailsTests.testOrderDetails(OrderDetailsTests.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace483135526", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace483135526'><pre>java.lang.ClassCastException: class io.restassured.internal.RequestSpecificationImpl cannot be cast to class io.restassured.response.Response (io.restassured.internal.RequestSpecificationImpl and io.restassured.response.Response are in unnamed module of loader &apos;app&apos;)
+	at api.endpoints.OrderDetailsEndPoints.orderDeatails(OrderDetailsEndPoints.java:10)
+	at api.test.OrderDetailsTests.testOrderDetails(OrderDetailsTests.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>api.test.OrderDetailsTests@13fd2ccd</td></tr>
+<tr>
+<td title='api.test.RequestCallbackTests.testCreateTicket()'><b>testCreateTicket</b><br>Test class: api.test.RequestCallbackTests</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [400]
+	at api.test.RequestCallbackTests.testCreateTicket(RequestCallbackTests.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace456826612", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace456826612'><pre>java.lang.AssertionError: expected [200] but found [400]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1382)
+	at org.testng.Assert.assertEquals(Assert.java:1428)
+	at api.test.RequestCallbackTests.testCreateTicket(RequestCallbackTests.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>api.test.RequestCallbackTests@506ae4d4</td></tr>
+<tr>
+<td title='api.test.CancelOrderTests.testCancelSameOrder()'><b>testCancelSameOrder</b><br>Test class: api.test.CancelOrderTests</td>
 <td><div><pre>java.lang.ClassCastException: class io.restassured.internal.RequestSpecificationImpl cannot be cast to class io.restassured.response.Response (io.restassured.internal.RequestSpecificationImpl and io.restassured.response.Response are in unnamed module of loader &apos;app&apos;)
 	at api.endpoints.CancelOrderEndPoints.cancelOrder(CancelOrderEndPoints.java:10)
-	at api.test.CancelOrderTests.testCancelOrder(CancelOrderTests.java:15)
+	at api.test.CancelOrderTests.testCancelSameOrder(CancelOrderTests.java:29)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace116901088", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace116901088'><pre>java.lang.ClassCastException: class io.restassured.internal.RequestSpecificationImpl cannot be cast to class io.restassured.response.Response (io.restassured.internal.RequestSpecificationImpl and io.restassured.response.Response are in unnamed module of loader &apos;app&apos;)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1191220798", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1191220798'><pre>java.lang.ClassCastException: class io.restassured.internal.RequestSpecificationImpl cannot be cast to class io.restassured.response.Response (io.restassured.internal.RequestSpecificationImpl and io.restassured.response.Response are in unnamed module of loader &apos;app&apos;)
 	at api.endpoints.CancelOrderEndPoints.cancelOrder(CancelOrderEndPoints.java:10)
-	at api.test.CancelOrderTests.testCancelOrder(CancelOrderTests.java:15)
+	at api.test.CancelOrderTests.testCancelSameOrder(CancelOrderTests.java:29)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -217,57 +435,12 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>api.test.CancelOrderTests@52b1beb6</td></tr>
 <tr>
-<td title='api.test.SaveInstructionsTests.testSaveInstructions()'><b>testSaveInstructions</b><br>Test class: api.test.SaveInstructionsTests</td>
-<td><div><pre>java.lang.AssertionError: expected [Instructions have been saved] but found [Order does not exist]
-	at api.test.SaveInstructionsTests.testSaveInstructions(SaveInstructionsTests.java:17)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace681375707", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace681375707'><pre>java.lang.AssertionError: expected [Instructions have been saved] but found [Order does not exist]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at api.test.SaveInstructionsTests.testSaveInstructions(SaveInstructionsTests.java:17)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>api.test.SaveInstructionsTests@273e7444</td></tr>
-<tr>
 <td title='api.test.PlaceOrderTests.testPlaceOrder()'><b>testPlaceOrder</b><br>Test class: api.test.PlaceOrderTests</td>
 <td><div><pre>java.lang.AssertionError: expected [200] but found [422]
 	at api.test.PlaceOrderTests.testPlaceOrder(PlaceOrderTests.java:35)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1794893473", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1794893473'><pre>java.lang.AssertionError: expected [200] but found [422]
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1522549999", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1522549999'><pre>java.lang.AssertionError: expected [200] but found [422]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1577)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
@@ -307,133 +480,6 @@ function toggleAllBoxes() {
 </pre></div></td>
 <td>0</td>
 <td>api.test.PlaceOrderTests@4efac082</td></tr>
-<tr>
-<td title='api.test.CancelOrderTests.testCancelSameOrder()'><b>testCancelSameOrder</b><br>Test class: api.test.CancelOrderTests</td>
-<td><div><pre>java.lang.ClassCastException: class io.restassured.internal.RequestSpecificationImpl cannot be cast to class io.restassured.response.Response (io.restassured.internal.RequestSpecificationImpl and io.restassured.response.Response are in unnamed module of loader &apos;app&apos;)
-	at api.endpoints.CancelOrderEndPoints.cancelOrder(CancelOrderEndPoints.java:10)
-	at api.test.CancelOrderTests.testCancelSameOrder(CancelOrderTests.java:29)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace834081069", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace834081069'><pre>java.lang.ClassCastException: class io.restassured.internal.RequestSpecificationImpl cannot be cast to class io.restassured.response.Response (io.restassured.internal.RequestSpecificationImpl and io.restassured.response.Response are in unnamed module of loader &apos;app&apos;)
-	at api.endpoints.CancelOrderEndPoints.cancelOrder(CancelOrderEndPoints.java:10)
-	at api.test.CancelOrderTests.testCancelSameOrder(CancelOrderTests.java:29)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>api.test.CancelOrderTests@52b1beb6</td></tr>
-<tr>
-<td title='api.test.OrderDetailsTests.testOrderDetails()'><b>testOrderDetails</b><br>Test class: api.test.OrderDetailsTests</td>
-<td><div><pre>java.lang.ClassCastException: class io.restassured.internal.RequestSpecificationImpl cannot be cast to class io.restassured.response.Response (io.restassured.internal.RequestSpecificationImpl and io.restassured.response.Response are in unnamed module of loader &apos;app&apos;)
-	at api.endpoints.OrderDetailsEndPoints.orderDeatails(OrderDetailsEndPoints.java:10)
-	at api.test.OrderDetailsTests.testOrderDetails(OrderDetailsTests.java:19)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1078220954", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1078220954'><pre>java.lang.ClassCastException: class io.restassured.internal.RequestSpecificationImpl cannot be cast to class io.restassured.response.Response (io.restassured.internal.RequestSpecificationImpl and io.restassured.response.Response are in unnamed module of loader &apos;app&apos;)
-	at api.endpoints.OrderDetailsEndPoints.orderDeatails(OrderDetailsEndPoints.java:10)
-	at api.test.OrderDetailsTests.testOrderDetails(OrderDetailsTests.java:19)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>api.test.OrderDetailsTests@13fd2ccd</td></tr>
-<tr>
-<td title='api.test.RescheduleOrderTests.testRescheduleOrder()'><b>testRescheduleOrder</b><br>Test class: api.test.RescheduleOrderTests</td>
-<td><div><pre>java.lang.AssertionError: expected [Order has been rescheduled] but found [Invalid or missing parameters]
-	at api.test.RescheduleOrderTests.testRescheduleOrder(RescheduleOrderTests.java:17)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1043154163", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1043154163'><pre>java.lang.AssertionError: expected [Order has been rescheduled] but found [Invalid or missing parameters]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at api.test.RescheduleOrderTests.testRescheduleOrder(RescheduleOrderTests.java:17)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>api.test.RescheduleOrderTests@72e5a8e</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -444,77 +490,67 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='api.test.OrderAvailableTimeslotsTests.testOrderAvaialbleTimeslots()'><b>testOrderAvaialbleTimeslots</b><br>Test class: api.test.OrderAvailableTimeslotsTests</td>
+<td title='api.test.VerifyIfscTests.testVerifyIfsc()'><b>testVerifyIfsc</b><br>Test class: api.test.VerifyIfscTests</td>
 <td></td>
 <td>0</td>
-<td>api.test.OrderAvailableTimeslotsTests@2d710f1a</td></tr>
-<tr>
-<td title='api.test.ViewProfileTests.testViewProfile()'><b>testViewProfile</b><br>Test class: api.test.ViewProfileTests</td>
-<td></td>
-<td>0</td>
-<td>api.test.ViewProfileTests@54e1c68b</td></tr>
-<tr>
-<td title='api.test.AddUpdateAddressTests.testAddUpdateAddress()'><b>testAddUpdateAddress</b><br>Test class: api.test.AddUpdateAddressTests</td>
-<td></td>
-<td>0</td>
-<td>api.test.AddUpdateAddressTests@4c1909a3</td></tr>
+<td>api.test.VerifyIfscTests@d9345cd</td></tr>
 <tr>
 <td title='api.test.DetectDeviceTests.testDetectDevice()'><b>testDetectDevice</b><br>Test class: api.test.DetectDeviceTests</td>
 <td></td>
 <td>0</td>
 <td>api.test.DetectDeviceTests@2dc54ad4</td></tr>
 <tr>
-<td title='api.test.NotificationCountTests.testNotificationCount()'><b>testNotificationCount</b><br>Test class: api.test.NotificationCountTests</td>
-<td></td>
-<td>0</td>
-<td>api.test.NotificationCountTests@48aca48b</td></tr>
-<tr>
-<td title='api.test.NotificationListTests.testNotificationList()'><b>testNotificationList</b><br>Test class: api.test.NotificationListTests</td>
-<td></td>
-<td>0</td>
-<td>api.test.NotificationListTests@7db12bb6</td></tr>
-<tr>
 <td title='api.test.PincodeServiceableTests.pincodeServiceable()'><b>pincodeServiceable</b><br>Test class: api.test.PincodeServiceableTests</td>
 <td></td>
 <td>0</td>
 <td>api.test.PincodeServiceableTests@1151e434</td></tr>
-<tr>
-<td title='api.test.VerifyIfscTests.testVerifyIfsc()'><b>testVerifyIfsc</b><br>Test class: api.test.VerifyIfscTests</td>
-<td></td>
-<td>0</td>
-<td>api.test.VerifyIfscTests@d9345cd</td></tr>
-<tr>
-<td title='api.test.ApplyCouponTests.testApplyCoupon()'><b>testApplyCoupon</b><br>Test class: api.test.ApplyCouponTests</td>
-<td></td>
-<td>0</td>
-<td>api.test.ApplyCouponTests@29215f06</td></tr>
-<tr>
-<td title='api.test.LoginTests.testLogin()'><b>testLogin</b><br>Test class: api.test.LoginTests</td>
-<td></td>
-<td>4</td>
-<td>api.test.LoginTests@437da279</td></tr>
-<tr>
-<td title='api.test.ApplicablePaymentMethodsTests.testApplicablePaymentMethods()'><b>testApplicablePaymentMethods</b><br>Test class: api.test.ApplicablePaymentMethodsTests</td>
-<td></td>
-<td>0</td>
-<td>api.test.ApplicablePaymentMethodsTests@428640fa</td></tr>
 <tr>
 <td title='api.test.GetCommonQuoteTests.testGetCommonQuotes()'><b>testGetCommonQuotes</b><br>Test class: api.test.GetCommonQuoteTests</td>
 <td></td>
 <td>0</td>
 <td>api.test.GetCommonQuoteTests@55634720</td></tr>
 <tr>
-<td title='api.test.ListVariantsTests.testListVariantQuestions()'><b>testListVariantQuestions</b><br>Test class: api.test.ListVariantsTests</td>
-<td></td>
-<td>0</td>
-<td>api.test.ListVariantsTests@4659191b</td></tr>
-<tr>
 <td title='api.test.SupportQuestionsTests.testSupportQuestions()'><b>testSupportQuestions</b><br>Test class: api.test.SupportQuestionsTests</td>
 <td></td>
 <td>0</td>
 <td>api.test.SupportQuestionsTests@b9b00e0</td></tr>
 <tr>
-<td title='api.test.RequestCallbackTests.testCreateTicket()'><b>testCreateTicket</b><br>Test class: api.test.RequestCallbackTests</td>
+<td title='api.test.LoginTests.testLogin()'><b>testLogin</b><br>Test class: api.test.LoginTests</td>
+<td></td>
+<td>14</td>
+<td>api.test.LoginTests@437da279</td></tr>
+<tr>
+<td title='api.test.LoginTests.testVerifyOtp()'><b>testVerifyOtp</b><br>Test class: api.test.LoginTests</td>
+<td></td>
+<td>0</td>
+<td>api.test.LoginTests@437da279</td></tr>
+<tr>
+<td title='api.test.GetAddressTests.testGetAddress()'><b>testGetAddress</b><br>Test class: api.test.GetAddressTests</td>
+<td></td>
+<td>0</td>
+<td>api.test.GetAddressTests@4b0d79fc</td></tr>
+<tr>
+<td title='api.test.ApplicablePaymentMethodsTests.testApplicablePaymentMethods()'><b>testApplicablePaymentMethods</b><br>Test class: api.test.ApplicablePaymentMethodsTests</td>
+<td></td>
+<td>0</td>
+<td>api.test.ApplicablePaymentMethodsTests@428640fa</td></tr>
+<tr>
+<td title='api.test.OrderAvailableTimeslotsTests.testOrderAvaialbleTimeslots()'><b>testOrderAvaialbleTimeslots</b><br>Test class: api.test.OrderAvailableTimeslotsTests</td>
+<td></td>
+<td>0</td>
+<td>api.test.OrderAvailableTimeslotsTests@2d710f1a</td></tr>
+<tr>
+<td title='api.test.NotificationCountTests.testNotificationCount()'><b>testNotificationCount</b><br>Test class: api.test.NotificationCountTests</td>
+<td></td>
+<td>0</td>
+<td>api.test.NotificationCountTests@48aca48b</td></tr>
+<tr>
+<td title='api.test.AddUpdateAddressTests.testAddUpdateAddress()'><b>testAddUpdateAddress</b><br>Test class: api.test.AddUpdateAddressTests</td>
+<td></td>
+<td>0</td>
+<td>api.test.AddUpdateAddressTests@4c1909a3</td></tr>
+<tr>
+<td title='api.test.RequestCallbackTests.testAlreadyCreated()'><b>testAlreadyCreated</b><br>Test class: api.test.RequestCallbackTests</td>
 <td></td>
 <td>0</td>
 <td>api.test.RequestCallbackTests@506ae4d4</td></tr>
@@ -529,25 +565,30 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>api.test.ApplyCouponTests@29215f06</td></tr>
 <tr>
-<td title='api.test.LoginTests.testVerifyOtp()'><b>testVerifyOtp</b><br>Test class: api.test.LoginTests</td>
+<td title='api.test.ListVariantsTests.testListVariantQuestions()'><b>testListVariantQuestions</b><br>Test class: api.test.ListVariantsTests</td>
 <td></td>
 <td>0</td>
-<td>api.test.LoginTests@437da279</td></tr>
+<td>api.test.ListVariantsTests@4659191b</td></tr>
 <tr>
-<td title='api.test.RequestCallbackTests.testAlreadyCreated()'><b>testAlreadyCreated</b><br>Test class: api.test.RequestCallbackTests</td>
+<td title='api.test.ViewProfileTests.testViewProfile()'><b>testViewProfile</b><br>Test class: api.test.ViewProfileTests</td>
 <td></td>
 <td>0</td>
-<td>api.test.RequestCallbackTests@506ae4d4</td></tr>
+<td>api.test.ViewProfileTests@54e1c68b</td></tr>
 <tr>
 <td title='api.test.ListOrdersTests.testListOrders()'><b>testListOrders</b><br>Test class: api.test.ListOrdersTests</td>
 <td></td>
 <td>0</td>
 <td>api.test.ListOrdersTests@6bd61f98</td></tr>
 <tr>
-<td title='api.test.GetAddressTests.testGetAddress()'><b>testGetAddress</b><br>Test class: api.test.GetAddressTests</td>
+<td title='api.test.NotificationListTests.testNotificationList()'><b>testNotificationList</b><br>Test class: api.test.NotificationListTests</td>
 <td></td>
 <td>0</td>
-<td>api.test.GetAddressTests@4b0d79fc</td></tr>
+<td>api.test.NotificationListTests@7db12bb6</td></tr>
+<tr>
+<td title='api.test.ApplyCouponTests.testApplyCoupon()'><b>testApplyCoupon</b><br>Test class: api.test.ApplyCouponTests</td>
+<td></td>
+<td>0</td>
+<td>api.test.ApplyCouponTests@29215f06</td></tr>
 </table><p>
 </body>
 </html>
