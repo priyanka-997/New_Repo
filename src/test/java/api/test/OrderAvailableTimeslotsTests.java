@@ -15,7 +15,7 @@ public class OrderAvailableTimeslotsTests {
 	
 	//public static String pickup_date; //= GlobalVariables.pickup_date ;
 	
-	static String pickup_date = GlobalVariables.pickup_date;
+	String pickup_date= GlobalVariables.pickup_date ;
 	
 	@Test(priority=12)
 	public void testOrderAvaialbleTimeslots() {

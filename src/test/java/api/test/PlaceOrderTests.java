@@ -1,8 +1,5 @@
 package api.test;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -12,7 +9,7 @@ import io.restassured.response.Response;
 
 public class PlaceOrderTests {
 	
-	static String pickup_date = GlobalVariables.pickup_date;
+/*	static String pickup_date = GlobalVariables.pickup_date;
 	
 	public void setupData() {
 		
@@ -22,7 +19,7 @@ public class PlaceOrderTests {
         System.out.println("Formatted date is " +pickup_date); 
         
 		
-	}
+	}*/
 	
 
 	@Test(priority=15)
