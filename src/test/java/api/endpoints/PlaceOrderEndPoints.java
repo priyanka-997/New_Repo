@@ -3,6 +3,8 @@ package api.endpoints;
 import io.restassured.response.Response;
 import static io.restassured.RestAssured.given;
 
+import api.test.OrderAvailableTimeslotsTests;
+
 
 public class PlaceOrderEndPoints {
 
@@ -77,13 +79,15 @@ public class PlaceOrderEndPoints {
 				.formParam("bank_acc_name", "")
 				.formParam("bank_ifsc", "")
 				.formParam("bank_acc_no", "")
-				.formParam("pickup_date", GlobalVariables.pickup_date)
+				.formParam("pickup_date", OrderAvailableTimeslotsTests.pickup_date)
 				.formParam("pickup_timeslot", GlobalVariables.time_slot)
 				
 						
 				
 				.when()
 		.post(Routes.place_order_post_url);
+		
+	System.out.println("Pickup date is " +OrderAvailableTimeslotsTests.pickup_date);
 		
 		return response;
 		

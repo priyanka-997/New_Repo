@@ -14,11 +14,15 @@ import io.restassured.response.Response;
 public class OrderAvailableTimeslotsTests {
 	
 	//public static String pickup_date; //= GlobalVariables.pickup_date ;
+	//public static String pickup_date ;
 	
-	String pickup_date= GlobalVariables.pickup_date ;
+	public static String pickup_date;
 	
+	
+
 	@Test(priority=12)
 	public void testOrderAvaialbleTimeslots() {
+		
 		
 		Response response = OrderAvailableTimeslotsEndPoints.availableTimeslots();
 		
@@ -27,12 +31,13 @@ public class OrderAvailableTimeslotsTests {
 		Assert.assertEquals(response.jsonPath().getString("message"), "Success");
 		Assert.assertEquals(response.getStatusCode(), 200);
 		
-		GlobalVariables.date = response.jsonPath().getString("list[2].date");
+		GlobalVariables.date = response.jsonPath().getString("list[5].date");
 		System.out.println("Available date is " +GlobalVariables.date);
 		
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
         String date = GlobalVariables.date;
-        LocalDate pickup_date = LocalDate.parse(date, formatter);
+        
+         LocalDate pickup_date = LocalDate.parse(date, formatter);
         System.out.println("Formatted date is " +pickup_date); 
 			
 			/*DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
