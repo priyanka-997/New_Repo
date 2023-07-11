@@ -3,11 +3,6 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="api.test.SaveInstructionsTests">
-        <methods>
-          <include name="testSaveInstructions"/>
-        </methods>
-      </class> <!-- api.test.SaveInstructionsTests -->
       <class name="api.test.RequestCallbackTests">
         <methods>
           <include name="testCreateTicket"/>
@@ -34,11 +29,6 @@
           <include name="testRescheduleOrder"/>
         </methods>
       </class> <!-- api.test.RescheduleOrderTests -->
-      <class name="api.test.PlaceOrderTests">
-        <methods>
-          <include name="testPlaceOrder"/>
-        </methods>
-      </class> <!-- api.test.PlaceOrderTests -->
       <class name="api.test.OrderDetailsTests">
         <methods>
           <include name="testOrderDetails"/>
