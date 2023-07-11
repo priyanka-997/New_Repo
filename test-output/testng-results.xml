@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="29" passed="22" failed="7" skipped="0">
+<testng-results ignored="0" total="29" passed="23" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-10T20:25:08 IST" name="Suite" finished-at="2023-07-10T20:25:32 IST" duration-ms="24436">
+  <suite started-at="2023-07-11T13:10:20 IST" name="Suite" finished-at="2023-07-11T13:10:34 IST" duration-ms="14034">
     <groups>
     </groups>
-    <test started-at="2023-07-10T20:25:08 IST" name="Test" finished-at="2023-07-10T20:25:32 IST" duration-ms="24436">
+    <test started-at="2023-07-11T13:10:20 IST" name="Test" finished-at="2023-07-11T13:10:34 IST" duration-ms="14034">
       <class name="api.test.PincodeServiceableTests">
-        <test-method signature="pincodeServiceable()[pri:4, instance:api.test.PincodeServiceableTests@1b11171f]" started-at="2023-07-10T20:25:18 IST" name="pincodeServiceable" finished-at="2023-07-10T20:25:18 IST" duration-ms="567" status="PASS">
+        <test-method signature="pincodeServiceable()[pri:4, instance:api.test.PincodeServiceableTests@1b11171f]" started-at="2023-07-11T13:10:25 IST" name="pincodeServiceable" finished-at="2023-07-11T13:10:25 IST" duration-ms="350" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pincodeServiceable -->
       </class> <!-- api.test.PincodeServiceableTests -->
       <class name="api.test.ApplyCouponTests">
-        <test-method signature="testApplyCoupon()[pri:13, instance:api.test.ApplyCouponTests@2d710f1a]" started-at="2023-07-10T20:25:24 IST" name="testApplyCoupon" finished-at="2023-07-10T20:25:25 IST" duration-ms="627" status="PASS">
+        <test-method signature="testApplyCoupon()[pri:13, instance:api.test.ApplyCouponTests@2d710f1a]" started-at="2023-07-11T13:10:29 IST" name="testApplyCoupon" finished-at="2023-07-11T13:10:29 IST" duration-ms="300" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testApplyCoupon -->
-        <test-method signature="testRevokeCoupon()[pri:14, instance:api.test.ApplyCouponTests@2d710f1a]" started-at="2023-07-10T20:25:25 IST" name="testRevokeCoupon" finished-at="2023-07-10T20:25:25 IST" duration-ms="312" status="PASS">
+        <test-method signature="testRevokeCoupon()[pri:14, instance:api.test.ApplyCouponTests@2d710f1a]" started-at="2023-07-11T13:10:29 IST" name="testRevokeCoupon" finished-at="2023-07-11T13:10:30 IST" duration-ms="546" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRevokeCoupon -->
       </class> <!-- api.test.ApplyCouponTests -->
       <class name="api.test.NotificationCountTests">
-        <test-method signature="testNotificationCount()[pri:26, instance:api.test.NotificationCountTests@4efac082]" started-at="2023-07-10T20:25:26 IST" name="testNotificationCount" finished-at="2023-07-10T20:25:26 IST" duration-ms="282" status="PASS">
+        <test-method signature="testNotificationCount()[pri:26, instance:api.test.NotificationCountTests@4efac082]" started-at="2023-07-11T13:10:30 IST" name="testNotificationCount" finished-at="2023-07-11T13:10:31 IST" duration-ms="509" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNotificationCount -->
       </class> <!-- api.test.NotificationCountTests -->
       <class name="api.test.GetCommonQuoteTests">
-        <test-method signature="testGetCommonQuotes()[pri:7, instance:api.test.GetCommonQuoteTests@4659191b]" started-at="2023-07-10T20:25:21 IST" name="testGetCommonQuotes" finished-at="2023-07-10T20:25:22 IST" duration-ms="666" status="PASS">
+        <test-method signature="testGetCommonQuotes()[pri:7, instance:api.test.GetCommonQuoteTests@4659191b]" started-at="2023-07-11T13:10:27 IST" name="testGetCommonQuotes" finished-at="2023-07-11T13:10:27 IST" duration-ms="444" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetCommonQuotes -->
       </class> <!-- api.test.GetCommonQuoteTests -->
       <class name="api.test.LoginTests">
-        <test-method signature="testLogin()[pri:1, instance:api.test.LoginTests@7bab3f1a]" started-at="2023-07-10T20:25:08 IST" name="testLogin" finished-at="2023-07-10T20:25:15 IST" duration-ms="7222" status="PASS">
+        <test-method signature="testLogin()[pri:1, instance:api.test.LoginTests@7bab3f1a]" started-at="2023-07-11T13:10:20 IST" name="testLogin" finished-at="2023-07-11T13:10:24 IST" duration-ms="4249" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method signature="testResendOtp()[pri:2, instance:api.test.LoginTests@7bab3f1a]" started-at="2023-07-10T20:25:15 IST" name="testResendOtp" finished-at="2023-07-10T20:25:16 IST" duration-ms="1340" status="PASS">
+        <test-method signature="testResendOtp()[pri:2, instance:api.test.LoginTests@7bab3f1a]" started-at="2023-07-11T13:10:24 IST" name="testResendOtp" finished-at="2023-07-11T13:10:25 IST" duration-ms="483" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testResendOtp -->
-        <test-method signature="testVerifyOtp()[pri:3, instance:api.test.LoginTests@7bab3f1a]" started-at="2023-07-10T20:25:16 IST" name="testVerifyOtp" finished-at="2023-07-10T20:25:18 IST" duration-ms="1210" status="PASS">
+        <test-method signature="testVerifyOtp()[pri:3, instance:api.test.LoginTests@7bab3f1a]" started-at="2023-07-11T13:10:25 IST" name="testVerifyOtp" finished-at="2023-07-11T13:10:25 IST" duration-ms="377" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testVerifyOtp -->
       </class> <!-- api.test.LoginTests -->
       <class name="api.test.OrderDetailsTests">
-        <test-method signature="testOrderDetails()[pri:17, instance:api.test.OrderDetailsTests@48aca48b]" started-at="2023-07-10T20:25:26 IST" name="testOrderDetails" finished-at="2023-07-10T20:25:26 IST" duration-ms="39" status="FAIL">
+        <test-method signature="testOrderDetails()[pri:17, instance:api.test.OrderDetailsTests@48aca48b]" started-at="2023-07-11T13:10:31 IST" name="testOrderDetails" finished-at="2023-07-11T13:10:31 IST" duration-ms="3" status="FAIL">
           <exception class="java.lang.ClassCastException">
             <message>
               <![CDATA[class io.restassured.internal.RequestSpecificationImpl cannot be cast to class io.restassured.response.Response (io.restassured.internal.RequestSpecificationImpl and io.restassured.response.Response are in unnamed module of loader 'app')]]>
@@ -94,25 +94,25 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- testOrderDetails -->
       </class> <!-- api.test.OrderDetailsTests -->
       <class name="api.test.DetectDeviceTests">
-        <test-method signature="testDetectDevice()[pri:5, instance:api.test.DetectDeviceTests@1151e434]" started-at="2023-07-10T20:25:18 IST" name="testDetectDevice" finished-at="2023-07-10T20:25:19 IST" duration-ms="1076" status="PASS">
+        <test-method signature="testDetectDevice()[pri:5, instance:api.test.DetectDeviceTests@1151e434]" started-at="2023-07-11T13:10:25 IST" name="testDetectDevice" finished-at="2023-07-11T13:10:26 IST" duration-ms="829" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDetectDevice -->
       </class> <!-- api.test.DetectDeviceTests -->
       <class name="api.test.PlaceOrderTests">
-        <test-method signature="testPlaceOrder()[pri:15, instance:api.test.PlaceOrderTests@29215f06]" started-at="2023-07-10T20:25:25 IST" name="testPlaceOrder" finished-at="2023-07-10T20:25:26 IST" duration-ms="599" status="PASS">
+        <test-method signature="testPlaceOrder()[pri:15, instance:api.test.PlaceOrderTests@29215f06]" started-at="2023-07-11T13:10:30 IST" name="testPlaceOrder" finished-at="2023-07-11T13:10:30 IST" duration-ms="362" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPlaceOrder -->
       </class> <!-- api.test.PlaceOrderTests -->
       <class name="api.test.SupportQuestionsTests">
-        <test-method signature="testSupportQuestions()[pri:28, instance:api.test.SupportQuestionsTests@13fd2ccd]" started-at="2023-07-10T20:25:26 IST" name="testSupportQuestions" finished-at="2023-07-10T20:25:28 IST" duration-ms="1320" status="PASS">
+        <test-method signature="testSupportQuestions()[pri:28, instance:api.test.SupportQuestionsTests@13fd2ccd]" started-at="2023-07-11T13:10:31 IST" name="testSupportQuestions" finished-at="2023-07-11T13:10:31 IST" duration-ms="338" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSupportQuestions -->
       </class> <!-- api.test.SupportQuestionsTests -->
       <class name="api.test.RequestCallbackTests">
-        <test-method signature="testCreateTicket()[pri:27, instance:api.test.RequestCallbackTests@b9b00e0]" started-at="2023-07-10T20:25:28 IST" name="testCreateTicket" finished-at="2023-07-10T20:25:28 IST" duration-ms="529" status="FAIL">
+        <test-method signature="testCreateTicket()[pri:27, instance:api.test.RequestCallbackTests@b9b00e0]" started-at="2023-07-11T13:10:31 IST" name="testCreateTicket" finished-at="2023-07-11T13:10:32 IST" duration-ms="297" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [200] but found [400]]]>
@@ -161,104 +161,61 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateTicket -->
-        <test-method signature="testAlreadyCreated()[pri:28, instance:api.test.RequestCallbackTests@b9b00e0]" started-at="2023-07-10T20:25:28 IST" name="testAlreadyCreated" finished-at="2023-07-10T20:25:29 IST" duration-ms="416" status="PASS">
+        <test-method signature="testAlreadyCreated()[pri:28, instance:api.test.RequestCallbackTests@b9b00e0]" started-at="2023-07-11T13:10:32 IST" name="testAlreadyCreated" finished-at="2023-07-11T13:10:32 IST" duration-ms="309" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAlreadyCreated -->
       </class> <!-- api.test.RequestCallbackTests -->
       <class name="api.test.AddUpdateAddressTests">
-        <test-method signature="testAddUpdateAddress()[pri:9, instance:api.test.AddUpdateAddressTests@4b0d79fc]" started-at="2023-07-10T20:25:22 IST" name="testAddUpdateAddress" finished-at="2023-07-10T20:25:23 IST" duration-ms="343" status="PASS">
+        <test-method signature="testAddUpdateAddress()[pri:9, instance:api.test.AddUpdateAddressTests@4b0d79fc]" started-at="2023-07-11T13:10:28 IST" name="testAddUpdateAddress" finished-at="2023-07-11T13:10:28 IST" duration-ms="302" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddUpdateAddress -->
       </class> <!-- api.test.AddUpdateAddressTests -->
       <class name="api.test.ListVariantsTests">
-        <test-method signature="testListVariantQuestions()[pri:6, instance:api.test.ListVariantsTests@2dc54ad4]" started-at="2023-07-10T20:25:19 IST" name="testListVariantQuestions" finished-at="2023-07-10T20:25:21 IST" duration-ms="1536" status="PASS">
+        <test-method signature="testListVariantQuestions()[pri:6, instance:api.test.ListVariantsTests@2dc54ad4]" started-at="2023-07-11T13:10:26 IST" name="testListVariantQuestions" finished-at="2023-07-11T13:10:27 IST" duration-ms="538" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testListVariantQuestions -->
       </class> <!-- api.test.ListVariantsTests -->
       <class name="api.test.RescheduleOrderTests">
-        <test-method signature="testRescheduleOrder()[pri:18, instance:api.test.RescheduleOrderTests@7d4f9aae]" started-at="2023-07-10T20:25:29 IST" name="testRescheduleOrder" finished-at="2023-07-10T20:25:29 IST" duration-ms="29" status="FAIL">
-          <exception class="java.lang.Error">
-            <message>
-              <![CDATA[Unresolved compilation problem: 
-pickup_date cannot be resolved or is not a field
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Error: Unresolved compilation problem: 
-pickup_date cannot be resolved or is not a field
-
-at api.endpoints.RescheduleOrderEndPoints.rescheduleOrder(RescheduleOrderEndPoints.java:19)
-at api.test.RescheduleOrderTests.testRescheduleOrder(RescheduleOrderTests.java:14)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Error -->
+        <test-method signature="testRescheduleOrder()[pri:18, instance:api.test.RescheduleOrderTests@7d4f9aae]" started-at="2023-07-11T13:10:32 IST" name="testRescheduleOrder" finished-at="2023-07-11T13:10:32 IST" duration-ms="312" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRescheduleOrder -->
       </class> <!-- api.test.RescheduleOrderTests -->
       <class name="api.test.ListOrdersTests">
-        <test-method signature="testListOrders()[pri:16, instance:api.test.ListOrdersTests@59505b48]" started-at="2023-07-10T20:25:26 IST" name="testListOrders" finished-at="2023-07-10T20:25:26 IST" duration-ms="454" status="PASS">
+        <test-method signature="testListOrders()[pri:16, instance:api.test.ListOrdersTests@59505b48]" started-at="2023-07-11T13:10:30 IST" name="testListOrders" finished-at="2023-07-11T13:10:30 IST" duration-ms="298" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testListOrders -->
       </class> <!-- api.test.ListOrdersTests -->
       <class name="api.test.GetAddressTests">
-        <test-method signature="testGetAddress()[pri:8, instance:api.test.GetAddressTests@55634720]" started-at="2023-07-10T20:25:22 IST" name="testGetAddress" finished-at="2023-07-10T20:25:22 IST" duration-ms="672" status="PASS">
+        <test-method signature="testGetAddress()[pri:8, instance:api.test.GetAddressTests@55634720]" started-at="2023-07-11T13:10:27 IST" name="testGetAddress" finished-at="2023-07-11T13:10:28 IST" duration-ms="438" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetAddress -->
       </class> <!-- api.test.GetAddressTests -->
       <class name="api.test.ViewProfileTests">
-        <test-method signature="testViewProfile()[pri:23, instance:api.test.ViewProfileTests@72e5a8e]" started-at="2023-07-10T20:25:29 IST" name="testViewProfile" finished-at="2023-07-10T20:25:29 IST" duration-ms="410" status="PASS">
+        <test-method signature="testViewProfile()[pri:23, instance:api.test.ViewProfileTests@72e5a8e]" started-at="2023-07-11T13:10:32 IST" name="testViewProfile" finished-at="2023-07-11T13:10:33 IST" duration-ms="297" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testViewProfile -->
       </class> <!-- api.test.ViewProfileTests -->
       <class name="api.test.OrderAvailableTimeslotsTests">
-        <test-method signature="testOrderAvaialbleTimeslots()[pri:12, instance:api.test.OrderAvailableTimeslotsTests@d9345cd]" started-at="2023-07-10T20:25:24 IST" name="testOrderAvaialbleTimeslots" finished-at="2023-07-10T20:25:24 IST" duration-ms="438" status="PASS">
+        <test-method signature="testOrderAvaialbleTimeslots()[pri:12, instance:api.test.OrderAvailableTimeslotsTests@d9345cd]" started-at="2023-07-11T13:10:29 IST" name="testOrderAvaialbleTimeslots" finished-at="2023-07-11T13:10:29 IST" duration-ms="333" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOrderAvaialbleTimeslots -->
       </class> <!-- api.test.OrderAvailableTimeslotsTests -->
       <class name="api.test.ApplicablePaymentMethodsTests">
-        <test-method signature="testApplicablePaymentMethods()[pri:10, instance:api.test.ApplicablePaymentMethodsTests@4c1909a3]" started-at="2023-07-10T20:25:23 IST" name="testApplicablePaymentMethods" finished-at="2023-07-10T20:25:23 IST" duration-ms="670" status="PASS">
+        <test-method signature="testApplicablePaymentMethods()[pri:10, instance:api.test.ApplicablePaymentMethodsTests@4c1909a3]" started-at="2023-07-11T13:10:28 IST" name="testApplicablePaymentMethods" finished-at="2023-07-11T13:10:28 IST" duration-ms="400" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testApplicablePaymentMethods -->
       </class> <!-- api.test.ApplicablePaymentMethodsTests -->
       <class name="api.test.ChangePaymentMethodTests">
-        <test-method signature="testChangePaymentMethod()[pri:20, instance:api.test.ChangePaymentMethodTests@506ae4d4]" started-at="2023-07-10T20:25:29 IST" name="testChangePaymentMethod" finished-at="2023-07-10T20:25:29 IST" duration-ms="23" status="FAIL">
+        <test-method signature="testChangePaymentMethod()[pri:20, instance:api.test.ChangePaymentMethodTests@506ae4d4]" started-at="2023-07-11T13:10:32 IST" name="testChangePaymentMethod" finished-at="2023-07-11T13:10:32 IST" duration-ms="4" status="FAIL">
           <exception class="java.lang.ClassCastException">
             <message>
               <![CDATA[class io.restassured.internal.RequestSpecificationImpl cannot be cast to class io.restassured.response.Response (io.restassured.internal.RequestSpecificationImpl and io.restassured.response.Response are in unnamed module of loader 'app')]]>
@@ -303,7 +260,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- testChangePaymentMethod -->
       </class> <!-- api.test.ChangePaymentMethodTests -->
       <class name="api.test.CancelOrderTests">
-        <test-method signature="testCancelOrder()[pri:21, instance:api.test.CancelOrderTests@53aac487]" started-at="2023-07-10T20:25:31 IST" name="testCancelOrder" finished-at="2023-07-10T20:25:31 IST" duration-ms="61" status="FAIL">
+        <test-method signature="testCancelOrder()[pri:21, instance:api.test.CancelOrderTests@53aac487]" started-at="2023-07-11T13:10:33 IST" name="testCancelOrder" finished-at="2023-07-11T13:10:33 IST" duration-ms="16" status="FAIL">
           <exception class="java.lang.ClassCastException">
             <message>
               <![CDATA[class io.restassured.internal.RequestSpecificationImpl cannot be cast to class io.restassured.response.Response (io.restassured.internal.RequestSpecificationImpl and io.restassured.response.Response are in unnamed module of loader 'app')]]>
@@ -346,7 +303,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCancelOrder -->
-        <test-method signature="testCancelSameOrder()[pri:22, instance:api.test.CancelOrderTests@53aac487]" started-at="2023-07-10T20:25:31 IST" name="testCancelSameOrder" finished-at="2023-07-10T20:25:31 IST" duration-ms="3" status="FAIL">
+        <test-method signature="testCancelSameOrder()[pri:22, instance:api.test.CancelOrderTests@53aac487]" started-at="2023-07-11T13:10:33 IST" name="testCancelSameOrder" finished-at="2023-07-11T13:10:33 IST" duration-ms="5" status="FAIL">
           <exception class="java.lang.ClassCastException">
             <message>
               <![CDATA[class io.restassured.internal.RequestSpecificationImpl cannot be cast to class io.restassured.response.Response (io.restassured.internal.RequestSpecificationImpl and io.restassured.response.Response are in unnamed module of loader 'app')]]>
@@ -391,7 +348,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- testCancelSameOrder -->
       </class> <!-- api.test.CancelOrderTests -->
       <class name="api.test.UpdateProfileTests">
-        <test-method signature="testUpdateProfile()[pri:24, instance:api.test.UpdateProfileTests@54e1c68b]" started-at="2023-07-10T20:25:29 IST" name="testUpdateProfile" finished-at="2023-07-10T20:25:31 IST" duration-ms="1296" status="FAIL">
+        <test-method signature="testUpdateProfile()[pri:24, instance:api.test.UpdateProfileTests@54e1c68b]" started-at="2023-07-11T13:10:33 IST" name="testUpdateProfile" finished-at="2023-07-11T13:10:33 IST" duration-ms="570" status="FAIL">
           <exception class="java.lang.NumberFormatException">
             <message>
               <![CDATA[For input string: "Profile has been updated"]]>
@@ -445,19 +402,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- testUpdateProfile -->
       </class> <!-- api.test.UpdateProfileTests -->
       <class name="api.test.SaveInstructionsTests">
-        <test-method signature="testSaveInstructions()[pri:19, instance:api.test.SaveInstructionsTests@52b1beb6]" started-at="2023-07-10T20:25:31 IST" name="testSaveInstructions" finished-at="2023-07-10T20:25:32 IST" duration-ms="1023" status="PASS">
+        <test-method signature="testSaveInstructions()[pri:19, instance:api.test.SaveInstructionsTests@52b1beb6]" started-at="2023-07-11T13:10:33 IST" name="testSaveInstructions" finished-at="2023-07-11T13:10:33 IST" duration-ms="268" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSaveInstructions -->
       </class> <!-- api.test.SaveInstructionsTests -->
       <class name="api.test.VerifyIfscTests">
-        <test-method signature="testVerifyIfsc()[pri:11, instance:api.test.VerifyIfscTests@428640fa]" started-at="2023-07-10T20:25:23 IST" name="testVerifyIfsc" finished-at="2023-07-10T20:25:24 IST" duration-ms="451" status="PASS">
+        <test-method signature="testVerifyIfsc()[pri:11, instance:api.test.VerifyIfscTests@428640fa]" started-at="2023-07-11T13:10:28 IST" name="testVerifyIfsc" finished-at="2023-07-11T13:10:29 IST" duration-ms="357" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testVerifyIfsc -->
       </class> <!-- api.test.VerifyIfscTests -->
       <class name="api.test.NotificationListTests">
-        <test-method signature="testNotificationList()[pri:25, instance:api.test.NotificationListTests@273e7444]" started-at="2023-07-10T20:25:32 IST" name="testNotificationList" finished-at="2023-07-10T20:25:32 IST" duration-ms="485" status="PASS">
+        <test-method signature="testNotificationList()[pri:25, instance:api.test.NotificationListTests@273e7444]" started-at="2023-07-11T13:10:33 IST" name="testNotificationList" finished-at="2023-07-11T13:10:34 IST" duration-ms="248" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNotificationList -->

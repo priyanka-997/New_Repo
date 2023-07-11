@@ -24,11 +24,6 @@
           <include name="testCancelOrder"/>
         </methods>
       </class> <!-- api.test.CancelOrderTests -->
-      <class name="api.test.RescheduleOrderTests">
-        <methods>
-          <include name="testRescheduleOrder"/>
-        </methods>
-      </class> <!-- api.test.RescheduleOrderTests -->
       <class name="api.test.OrderDetailsTests">
         <methods>
           <include name="testOrderDetails"/>

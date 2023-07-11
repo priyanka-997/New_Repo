@@ -79,7 +79,7 @@ public class PlaceOrderEndPoints {
 				.formParam("bank_acc_name", "")
 				.formParam("bank_ifsc", "")
 				.formParam("bank_acc_no", "")
-				.formParam("pickup_date", OrderAvailableTimeslotsTests.pickup_dt)
+				.formParam("pickup_date", GlobalVariables.pickup_date)
 				.formParam("pickup_timeslot", GlobalVariables.time_slot)
 				
 						
@@ -87,7 +87,7 @@ public class PlaceOrderEndPoints {
 				.when()
 		.post(Routes.place_order_post_url);
 		
-	System.out.println("Pickup date is " +OrderAvailableTimeslotsTests.pickup_dt);
+	System.out.println("Pickup date is " +GlobalVariables.pickup_date);
 		
 		return response;
 		

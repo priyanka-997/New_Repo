@@ -16,7 +16,7 @@ public class OrderAvailableTimeslotsTests {
 	//public static String pickup_date; //= GlobalVariables.pickup_date ;
 	//public static String pickup_date ;
 	
-	public static String pickup_dt;
+	//public static String pickup_dt;
 	
 	
 
@@ -37,11 +37,11 @@ public class OrderAvailableTimeslotsTests {
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
         String date = GlobalVariables.date;
         
-         LocalDate pickup_date = LocalDate.parse(date, formatter);
+         LocalDate pickup_dt = LocalDate.parse(date, formatter);
          
-         pickup_dt= pickup_date.toString();
+         GlobalVariables.pickup_date= pickup_dt.toString();
         		 
-        System.out.println("Formatted date is " +pickup_date); 
+        System.out.println("Formatted date is " +GlobalVariables.pickup_date); 
 			
 			/*DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 		        String date = GlobalVariables.date;
