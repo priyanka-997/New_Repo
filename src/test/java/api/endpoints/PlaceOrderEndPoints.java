@@ -3,7 +3,6 @@ package api.endpoints;
 import io.restassured.response.Response;
 import static io.restassured.RestAssured.given;
 
-import api.test.OrderAvailableTimeslotsTests;
 
 
 public class PlaceOrderEndPoints {
