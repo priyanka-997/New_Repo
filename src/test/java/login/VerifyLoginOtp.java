@@ -12,6 +12,7 @@ import api.services.HttpStatusCode;
 import automationUtils.GlobalVariables;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+import loginPayloads.VerifyLoginOtpPayload;
 import utils.BaseUtils;
 
 public class VerifyLoginOtp extends BaseUtils {
@@ -29,8 +30,7 @@ public class VerifyLoginOtp extends BaseUtils {
         genericHeaders.put("Content_Type", GlobalVariables.Content_Type);
 
     }
-	
-	
+
 	
 	// Content_Type
     @Test(priority = 1,testName = "Validations for Mandatory Header - Content_Type Missing")
@@ -40,7 +40,7 @@ public class VerifyLoginOtp extends BaseUtils {
         header.remove("Content_Type");
 
         try{
-            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header, VerifyLoginOtp.getVerifyLoginOtpPayload(mobile_number, Otp));
+            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header, VerifyLoginOtpPayload.getVerifyLoginOtpPayload(mobile_number, Otp));
             ApiClient.validateStatusCode(clientResponse, HttpStatusCode.UNPROCESSABLE_ENTITY);
         }
         catch(Exception e){
@@ -56,7 +56,7 @@ public class VerifyLoginOtp extends BaseUtils {
         header.replace("Content_Type","application");
 
         try{
-            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,VerifyLoginOtp.getVerifyLoginOtpPayload(mobile_number, Otp));
+            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,VerifyLoginOtpPayload.getVerifyLoginOtpPayload(mobile_number, Otp));
             ApiClient.validateStatusCode(clientResponse, HttpStatusCode.UNPROCESSABLE_ENTITY);
         }
         catch(Exception e){
@@ -70,11 +70,11 @@ public class VerifyLoginOtp extends BaseUtils {
         header.replace("Content_Type","");
 
         try{
-            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,VerifyLoginOtp.getVerifyLoginOtpPayload(mobile_number, Otp));
+            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,VerifyLoginOtpPayload.getVerifyLoginOtpPayload(mobile_number, Otp));
             ApiClient.validateStatusCode(clientResponse, HttpStatusCode.OK);
             
             JsonPath js=ApiClient.rawToJson(clientResponse);
-            Assert.assertEquals(js.get("message"), "OTP Sent to entered mobile number");
+            Assert.assertEquals(js.get("message"), "Success");
         }
         catch(Exception e){
             e.printStackTrace();
@@ -87,11 +87,11 @@ public class VerifyLoginOtp extends BaseUtils {
         Map<String, String> header = new HashMap<>(genericHeaders);
 
         try{
-            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,VerifyLoginOtp.getVerifyLoginOtpPayload(mobile_number, Otp));
+            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,VerifyLoginOtpPayload.getVerifyLoginOtpPayload(mobile_number, Otp));
             ApiClient.validateStatusCode(clientResponse, HttpStatusCode.OK);
             
             JsonPath js=ApiClient.rawToJson(clientResponse);
-            Assert.assertEquals(js.get("message"), "OTP Sent to entered mobile number");
+            Assert.assertEquals(js.get("message"), "Success");
         }
         catch(Exception e){
             e.printStackTrace();
@@ -105,13 +105,12 @@ public class VerifyLoginOtp extends BaseUtils {
         Map<String, String> header = new HashMap<>(genericHeaders);
 
         try{
-            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,VerifyLoginOtp.getVerifyLoginOtpPayload(mobile_number, Otp));
+            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,VerifyLoginOtpPayload.getVerifyLoginOtpPayload(mobile_number, Otp));
             ApiClient.validateStatusCode(clientResponse, HttpStatusCode.OK);
             
             JsonPath js= ApiClient.rawToJson(clientResponse);
-            Assert.assertEquals(js.getBoolean("message"),"OTP Sent to entered mobile number");
+            Assert.assertEquals(js.get("message"),"Success");
             
-            Token= 
         }
         catch(Exception e){
             e.printStackTrace();
@@ -124,7 +123,7 @@ public class VerifyLoginOtp extends BaseUtils {
         Map<String, String> header = new HashMap<>(genericHeaders);
 
         try{
-            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,VerifyLoginOtp.getVerifyLoginOtpPayload("", Otp));
+            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,VerifyLoginOtpPayload.getVerifyLoginOtpPayload("", Otp));
             ApiClient.validateStatusCode(clientResponse, HttpStatusCode.UNPROCESSABLE_ENTITY);
             JsonPath js=ApiClient.rawToJson(clientResponse);
             Assert.assertEquals(js.get("errors.mobile_number[0]"), "Mobile number is required");
@@ -140,10 +139,10 @@ public class VerifyLoginOtp extends BaseUtils {
         Map<String, String> header = new HashMap<>(genericHeaders);
 
         try{
-            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,VerifyLoginOtp.getVerifyLoginOtpPayload("7905", Otp));
+            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,VerifyLoginOtpPayload.getVerifyLoginOtpPayload("7905", Otp));
             ApiClient.validateStatusCode(clientResponse, HttpStatusCode.UNPROCESSABLE_ENTITY);
             JsonPath js=ApiClient.rawToJson(clientResponse);
-            Assert.assertEquals(js.get("errors.mobile_number[0]"), "Mobile number is required");
+            Assert.assertEquals(js.get("errors.mobile_number[0]"), "Please enter valid mobile number");
         }
         catch(Exception e){
             e.printStackTrace();
@@ -156,7 +155,7 @@ public class VerifyLoginOtp extends BaseUtils {
         Map<String, String> header = new HashMap<>(genericHeaders);
 
         try{
-            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,VerifyLoginOtp.getVerifyLoginOtpPayload(mobile_number, Otp).replace("\"mobilenumber\": \""+mobile_number+"\"\n",""));
+            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,VerifyLoginOtpPayload.getVerifyLoginOtpPayload(mobile_number, Otp).replace("\"mobilenumber\": \""+mobile_number+"\"\n",""));
             ApiClient.validateStatusCode(clientResponse, HttpStatusCode.UNPROCESSABLE_ENTITY);
             JsonPath js=ApiClient.rawToJson(clientResponse);
             Assert.assertEquals(js.get("errors.mobile_number[0]"), "Mobile number is required");
@@ -172,11 +171,11 @@ public class VerifyLoginOtp extends BaseUtils {
         Map<String, String> header = new HashMap<>(genericHeaders);
 
         try{
-            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,VerifyLoginOtp.getVerifyLoginOtpPayload(mobile_number, Otp));
+            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,VerifyLoginOtpPayload.getVerifyLoginOtpPayload(mobile_number, Otp));
             ApiClient.validateStatusCode(clientResponse, HttpStatusCode.OK);
             
             JsonPath js= ApiClient.rawToJson(clientResponse);
-            Assert.assertEquals(js.getBoolean("message"),"OTP Sent to entered mobile number");
+            Assert.assertEquals(js.get("message"),"Success");
             
             
             GlobalVariables.token = js.getString("tokens.token") ;
@@ -197,10 +196,10 @@ public class VerifyLoginOtp extends BaseUtils {
         Map<String, String> header = new HashMap<>(genericHeaders);
 
         try{
-            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,VerifyLoginOtp.getVerifyLoginOtpPayload(mobile_number, ""));
+            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,VerifyLoginOtpPayload.getVerifyLoginOtpPayload(mobile_number, ""));
             ApiClient.validateStatusCode(clientResponse, HttpStatusCode.UNPROCESSABLE_ENTITY);
             JsonPath js=ApiClient.rawToJson(clientResponse);
-            Assert.assertEquals(js.get("errors.mobile_number[0]"), "Mobile number is required");
+            Assert.assertEquals(js.get("errors.otp[0]"), "OTP is required");
         }
         catch(Exception e){
             e.printStackTrace();
@@ -213,10 +212,10 @@ public class VerifyLoginOtp extends BaseUtils {
         Map<String, String> header = new HashMap<>(genericHeaders);
 
         try{
-            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,VerifyLoginOtp.getVerifyLoginOtpPayload(mobile_number, "2222"));
-            ApiClient.validateStatusCode(clientResponse, HttpStatusCode.UNPROCESSABLE_ENTITY);
+            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,VerifyLoginOtpPayload.getVerifyLoginOtpPayload(mobile_number, "2222"));
+            ApiClient.validateStatusCode(clientResponse, HttpStatusCode.BAD_REQUEST);
             JsonPath js=ApiClient.rawToJson(clientResponse);
-            Assert.assertEquals(js.get("errors.mobile_number[0]"), "Mobile number is required");
+            Assert.assertEquals(js.get("message"), "Incorrect OTP");
         }
         catch(Exception e){
             e.printStackTrace();
@@ -229,10 +228,10 @@ public class VerifyLoginOtp extends BaseUtils {
         Map<String, String> header = new HashMap<>(genericHeaders);
 
         try{
-            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,VerifyLoginOtp.getVerifyLoginOtpPayload(mobile_number, Otp).replace("\"Otp\": \""+Otp+"\"\n",""));
+            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,VerifyLoginOtpPayload.getVerifyLoginOtpPayload(mobile_number, Otp).replace("\"Otp\": \""+Otp+"\"\n",""));
             ApiClient.validateStatusCode(clientResponse, HttpStatusCode.UNPROCESSABLE_ENTITY);
             JsonPath js=ApiClient.rawToJson(clientResponse);
-            Assert.assertEquals(js.get("errors.mobile_number[0]"), "Mobile number is required");
+            Assert.assertEquals(js.get("errors.otp[0]"), "OTP is required");
         }
         catch(Exception e){
             e.printStackTrace();

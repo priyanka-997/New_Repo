@@ -1,6 +1,6 @@
 package loginPayloads;
 
-public class LoginSendOtp {
+public class LoginSendOtpPayload {
 	
 	/*static String mobileNumber;
 

@@ -1,13 +1,13 @@
 package loginPayloads;
 
 
-public class VerifyLoginOtp {
+public class VerifyLoginOtpPayload {
 
 	
-	 static String getVerifyLoginOtpPayload(String mobile_number, String Otp) {
+	public static String getVerifyLoginOtpPayload(String mobile_number, String Otp) {
 		
         String verifyLoginOtpPayload =  "{\n" +
-        "\"mobile_number\":mobile_number,\n" +
+        "\"mobile_number\":\"mobile_number\",\n" +
         "\"Otp\": \"Otp\",\n" +
         "    }\n" +
        "}";

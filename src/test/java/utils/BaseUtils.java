@@ -1,13 +1,12 @@
 package utils;
 
-import java.io.File;
+
 import java.util.Map;
 
 import org.testng.ITestContext;
 import org.testng.annotations.BeforeSuite;
 
 import api.services.ApiClient;
-import automationUtils.GlobalVariables;
 import customer.property.DataProvider;
 import customer.property.PropertyHelper;
 
@@ -17,6 +16,8 @@ public class BaseUtils {
 	protected static String REQUEST_POST_SEND_OTP;
 	protected static String REQUEST_POST_RESEND_OTP;
 	protected static String REQUEST_POST_VERIFY_LOGIN_OTP;
+	protected static String REQUEST_POST_PINCODE_SERVICABLE;
+	protected static String REQUEST_POST_DETECT_DEVICE;
     
     protected static ApiClient apiClient;
    
@@ -42,11 +43,12 @@ public class BaseUtils {
                 
         }
 	
-	
-	
 	REQUEST_POST_SEND_OTP = PropertyHelper.readProperty("REQUEST_POST_SEND_OTP");
 	REQUEST_POST_RESEND_OTP = PropertyHelper.readProperty("REQUEST_POST_RESEND_OTP");
 	REQUEST_POST_VERIFY_LOGIN_OTP = PropertyHelper.readProperty("REQUEST_POST_VERIFY_LOGIN_OTP");
-
+	REQUEST_POST_PINCODE_SERVICABLE= PropertyHelper.readProperty("REQUEST_POST_PINCODE_SERVICABLE");
+	REQUEST_POST_DETECT_DEVICE= PropertyHelper.readProperty("REQUEST_POST_DETECT_DEVICE");
+	
+	
 }
 }
