@@ -40,7 +40,7 @@ public class DetectDevice extends BaseUtils {
         header.remove("Content_Type");
 
         try{
-            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header, DetectDevicePayload.getDetectDevicePayload(model_number, internal_memory, internal_storage, cpu_model));
+            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_DETECT_DEVICE,header, DetectDevicePayload.getDetectDevicePayload(model_number, internal_memory, internal_storage, cpu_model));
             ApiClient.validateStatusCode(clientResponse, HttpStatusCode.UNPROCESSABLE_ENTITY);
         }
         catch(Exception e){
@@ -56,7 +56,7 @@ public class DetectDevice extends BaseUtils {
         header.replace("Content_Type","application");
 
         try{
-            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header, DetectDevicePayload.getDetectDevicePayload(model_number, internal_memory, internal_storage, cpu_model));
+            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_DETECT_DEVICE,header, DetectDevicePayload.getDetectDevicePayload(model_number, internal_memory, internal_storage, cpu_model));
             ApiClient.validateStatusCode(clientResponse, HttpStatusCode.UNPROCESSABLE_ENTITY);
         }
         catch(Exception e){
@@ -70,7 +70,7 @@ public class DetectDevice extends BaseUtils {
         header.replace("Content_Type","");
 
         try{
-            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header, DetectDevicePayload.getDetectDevicePayload(model_number, internal_memory, internal_storage, cpu_model));
+            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_DETECT_DEVICE,header, DetectDevicePayload.getDetectDevicePayload(model_number, internal_memory, internal_storage, cpu_model));
             ApiClient.validateStatusCode(clientResponse, HttpStatusCode.OK);
             
             JsonPath js=ApiClient.rawToJson(clientResponse);
@@ -87,7 +87,7 @@ public class DetectDevice extends BaseUtils {
         Map<String, String> header = new HashMap<>(genericHeaders);
 
         try{
-            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header, DetectDevicePayload.getDetectDevicePayload(model_number, internal_memory, internal_storage, cpu_model));
+            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_DETECT_DEVICE,header, DetectDevicePayload.getDetectDevicePayload(model_number, internal_memory, internal_storage, cpu_model));
             ApiClient.validateStatusCode(clientResponse, HttpStatusCode.OK);
             
             JsonPath js=ApiClient.rawToJson(clientResponse);
@@ -105,7 +105,7 @@ public class DetectDevice extends BaseUtils {
         Map<String, String> header = new HashMap<>(genericHeaders);
 
         try{
-            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header, DetectDevicePayload.getDetectDevicePayload(model_number, internal_memory, internal_storage, cpu_model));
+            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_DETECT_DEVICE,header, DetectDevicePayload.getDetectDevicePayload(model_number, internal_memory, internal_storage, cpu_model));
             ApiClient.validateStatusCode(clientResponse, HttpStatusCode.OK);
             
             JsonPath js= ApiClient.rawToJson(clientResponse);
@@ -123,7 +123,7 @@ public class DetectDevice extends BaseUtils {
         Map<String, String> header = new HashMap<>(genericHeaders);
 
         try{
-            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header, DetectDevicePayload.getDetectDevicePayload("", internal_memory, internal_storage, cpu_model));
+            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_DETECT_DEVICE,header, DetectDevicePayload.getDetectDevicePayload("", internal_memory, internal_storage, cpu_model));
             ApiClient.validateStatusCode(clientResponse, HttpStatusCode.UNPROCESSABLE_ENTITY);
             JsonPath js=ApiClient.rawToJson(clientResponse);
             Assert.assertEquals(js.get("errors.model_number[0]"), "Model Number is required");
@@ -139,7 +139,7 @@ public class DetectDevice extends BaseUtils {
         Map<String, String> header = new HashMap<>(genericHeaders);
 
         try{
-            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,DetectDevicePayload.getDetectDevicePayload("ABC", internal_memory, internal_storage, cpu_model));
+            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_DETECT_DEVICE,header,DetectDevicePayload.getDetectDevicePayload("ABC", internal_memory, internal_storage, cpu_model));
             ApiClient.validateStatusCode(clientResponse, HttpStatusCode.BAD_REQUEST);
             JsonPath js=ApiClient.rawToJson(clientResponse);
             Assert.assertEquals(js.get("message"), "No such device found");
@@ -155,7 +155,7 @@ public class DetectDevice extends BaseUtils {
         Map<String, String> header = new HashMap<>(genericHeaders);
 
         try{
-            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,DetectDevicePayload.getDetectDevicePayload(model_number, internal_memory, internal_storage, cpu_model).replace("\"model_number\": \""+model_number+"\"\n",""));
+            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_DETECT_DEVICE,header,DetectDevicePayload.getDetectDevicePayload(model_number, internal_memory, internal_storage, cpu_model).replace("\"model_number\": \""+model_number+"\"\n",""));
             ApiClient.validateStatusCode(clientResponse, HttpStatusCode.UNPROCESSABLE_ENTITY);
             JsonPath js=ApiClient.rawToJson(clientResponse);
             Assert.assertEquals(js.get("errors.model_number[0]"), "Model Number is required");
@@ -171,7 +171,7 @@ public class DetectDevice extends BaseUtils {
         Map<String, String> header = new HashMap<>(genericHeaders);
 
         try{
-            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,DetectDevicePayload.getDetectDevicePayload(model_number, internal_memory, internal_storage, cpu_model));
+            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_DETECT_DEVICE,header,DetectDevicePayload.getDetectDevicePayload(model_number, internal_memory, internal_storage, cpu_model));
             ApiClient.validateStatusCode(clientResponse, HttpStatusCode.OK);
             
             JsonPath js= ApiClient.rawToJson(clientResponse);
@@ -190,7 +190,7 @@ public class DetectDevice extends BaseUtils {
         Map<String, String> header = new HashMap<>(genericHeaders);
 
         try{
-            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,DetectDevicePayload.getDetectDevicePayload(model_number, "", internal_storage, cpu_model));
+            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_DETECT_DEVICE,header,DetectDevicePayload.getDetectDevicePayload(model_number, "", internal_storage, cpu_model));
             ApiClient.validateStatusCode(clientResponse, HttpStatusCode.UNPROCESSABLE_ENTITY);
             JsonPath js=ApiClient.rawToJson(clientResponse);
             Assert.assertEquals(js.get("errors.internal_memory[0]"), "Internal Memory is required");
@@ -206,7 +206,7 @@ public class DetectDevice extends BaseUtils {
         Map<String, String> header = new HashMap<>(genericHeaders);
 
         try{
-            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,DetectDevicePayload.getDetectDevicePayload(model_number, "abc", internal_storage, cpu_model));
+            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_DETECT_DEVICE,header,DetectDevicePayload.getDetectDevicePayload(model_number, "abc", internal_storage, cpu_model));
             ApiClient.validateStatusCode(clientResponse, HttpStatusCode.BAD_REQUEST);
             JsonPath js=ApiClient.rawToJson(clientResponse);
             Assert.assertEquals(js.get("message"), "No such device found");
@@ -222,7 +222,7 @@ public class DetectDevice extends BaseUtils {
         Map<String, String> header = new HashMap<>(genericHeaders);
 
         try{
-            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,DetectDevicePayload.getDetectDevicePayload(model_number, internal_memory, internal_storage, cpu_model).replace("\"internal_memory\": \""+internal_memory+"\"\n",""));
+            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_DETECT_DEVICE,header,DetectDevicePayload.getDetectDevicePayload(model_number, internal_memory, internal_storage, cpu_model).replace("\"internal_memory\": \""+internal_memory+"\"\n",""));
             ApiClient.validateStatusCode(clientResponse, HttpStatusCode.UNPROCESSABLE_ENTITY);
             JsonPath js=ApiClient.rawToJson(clientResponse);
             Assert.assertEquals(js.get("errors.internal_memory[0]"), "Internal Memory is required");
@@ -238,7 +238,7 @@ public class DetectDevice extends BaseUtils {
         Map<String, String> header = new HashMap<>(genericHeaders);
 
         try{
-            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,DetectDevicePayload.getDetectDevicePayload(model_number, internal_memory, internal_storage, cpu_model));
+            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_DETECT_DEVICE,header,DetectDevicePayload.getDetectDevicePayload(model_number, internal_memory, internal_storage, cpu_model));
             ApiClient.validateStatusCode(clientResponse, HttpStatusCode.OK);
             
             JsonPath js= ApiClient.rawToJson(clientResponse);
@@ -257,7 +257,7 @@ public class DetectDevice extends BaseUtils {
         Map<String, String> header = new HashMap<>(genericHeaders);
 
         try{
-            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,DetectDevicePayload.getDetectDevicePayload(model_number, internal_memory, "", cpu_model));
+            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_DETECT_DEVICE,header,DetectDevicePayload.getDetectDevicePayload(model_number, internal_memory, "", cpu_model));
             ApiClient.validateStatusCode(clientResponse, HttpStatusCode.UNPROCESSABLE_ENTITY);
             JsonPath js=ApiClient.rawToJson(clientResponse);
             Assert.assertEquals(js.get("errors.internal_storage[0]"),"Internal Storage is required");
@@ -273,7 +273,7 @@ public class DetectDevice extends BaseUtils {
         Map<String, String> header = new HashMap<>(genericHeaders);
 
         try{
-            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,DetectDevicePayload.getDetectDevicePayload(model_number, internal_memory, "abc", cpu_model));
+            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_DETECT_DEVICE,header,DetectDevicePayload.getDetectDevicePayload(model_number, internal_memory, "abc", cpu_model));
             ApiClient.validateStatusCode(clientResponse, HttpStatusCode.BAD_REQUEST);
             JsonPath js=ApiClient.rawToJson(clientResponse);
             Assert.assertEquals(js.get("message"),"No such device found");
@@ -289,7 +289,7 @@ public class DetectDevice extends BaseUtils {
         Map<String, String> header = new HashMap<>(genericHeaders);
 
         try{
-            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,DetectDevicePayload.getDetectDevicePayload(model_number, internal_memory, internal_storage, cpu_model).replace("\"internal_storage\": \""+internal_storage+"\"\n",""));
+            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_DETECT_DEVICE,header,DetectDevicePayload.getDetectDevicePayload(model_number, internal_memory, internal_storage, cpu_model).replace("\"internal_storage\": \""+internal_storage+"\"\n",""));
             ApiClient.validateStatusCode(clientResponse, HttpStatusCode.UNPROCESSABLE_ENTITY);
             JsonPath js=ApiClient.rawToJson(clientResponse);
             Assert.assertEquals(js.get("errors.internal_storage[0]"),"Internal Storage is required");
@@ -306,7 +306,7 @@ public class DetectDevice extends BaseUtils {
         Map<String, String> header = new HashMap<>(genericHeaders);
 
         try{
-            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,DetectDevicePayload.getDetectDevicePayload(model_number, internal_memory, internal_storage, cpu_model));
+            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_DETECT_DEVICE,header,DetectDevicePayload.getDetectDevicePayload(model_number, internal_memory, internal_storage, cpu_model));
             ApiClient.validateStatusCode(clientResponse, HttpStatusCode.OK);
             
             JsonPath js= ApiClient.rawToJson(clientResponse);
@@ -325,7 +325,7 @@ public class DetectDevice extends BaseUtils {
         Map<String, String> header = new HashMap<>(genericHeaders);
 
         try{
-            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,DetectDevicePayload.getDetectDevicePayload(model_number, internal_memory, internal_storage, ""));
+            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_DETECT_DEVICE,header,DetectDevicePayload.getDetectDevicePayload(model_number, internal_memory, internal_storage, ""));
             ApiClient.validateStatusCode(clientResponse, HttpStatusCode.OK);
             JsonPath js=ApiClient.rawToJson(clientResponse);
             Assert.assertEquals(js.get("message"),"Success");
@@ -341,7 +341,7 @@ public class DetectDevice extends BaseUtils {
         Map<String, String> header = new HashMap<>(genericHeaders);
 
         try{
-            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,DetectDevicePayload.getDetectDevicePayload(model_number, internal_memory, internal_storage, "abc"));
+            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_DETECT_DEVICE,header,DetectDevicePayload.getDetectDevicePayload(model_number, internal_memory, internal_storage, "abc"));
             ApiClient.validateStatusCode(clientResponse, HttpStatusCode.OK);
             JsonPath js=ApiClient.rawToJson(clientResponse);
             Assert.assertEquals(js.get("message"),"Success");
@@ -357,7 +357,7 @@ public class DetectDevice extends BaseUtils {
         Map<String, String> header = new HashMap<>(genericHeaders);
 
         try{
-            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,DetectDevicePayload.getDetectDevicePayload(model_number, internal_memory, internal_storage, cpu_model).replace("\"cpu_model\": \""+cpu_model+"\"\n",""));
+            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_DETECT_DEVICE,header,DetectDevicePayload.getDetectDevicePayload(model_number, internal_memory, internal_storage, cpu_model).replace("\"cpu_model\": \""+cpu_model+"\"\n",""));
             ApiClient.validateStatusCode(clientResponse, HttpStatusCode.OK);
             JsonPath js=ApiClient.rawToJson(clientResponse);
             Assert.assertEquals(js.get("message"),"Success");
