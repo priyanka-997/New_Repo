@@ -1,34 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="api.test.RequestCallbackTests">
+      <class name="login.SendOtp">
         <methods>
-          <include name="testCreateTicket"/>
+          <include name="RequestBodyValidationForMobileNumber_Is_Invalid"/>
+          <include name="RequestBodyValidationForMobileNumber_Is_Blank"/>
+          <include name="headerValidationForContentType_Missing"/>
+          <include name="beforeSuite"/>
+          <include name="RequestBodyValidationForMobileNumber_Is_Correct"/>
+          <include name="headerValidationForContentType_Invalid"/>
+          <include name="before_method"/>
+          <include name="RequestBodyValidationForMobileNumber_Is_Missing"/>
         </methods>
-      </class> <!-- api.test.RequestCallbackTests -->
-      <class name="api.test.ChangePaymentMethodTests">
-        <methods>
-          <include name="testChangePaymentMethod"/>
-        </methods>
-      </class> <!-- api.test.ChangePaymentMethodTests -->
-      <class name="api.test.UpdateProfileTests">
-        <methods>
-          <include name="testUpdateProfile"/>
-        </methods>
-      </class> <!-- api.test.UpdateProfileTests -->
-      <class name="api.test.CancelOrderTests">
-        <methods>
-          <include name="testCancelSameOrder"/>
-          <include name="testCancelOrder"/>
-        </methods>
-      </class> <!-- api.test.CancelOrderTests -->
-      <class name="api.test.OrderDetailsTests">
-        <methods>
-          <include name="testOrderDetails"/>
-        </methods>
-      </class> <!-- api.test.OrderDetailsTests -->
+      </class> <!-- login.SendOtp -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
