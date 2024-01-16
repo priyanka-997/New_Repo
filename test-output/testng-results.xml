@@ -1,147 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="8" passed="0" failed="0" skipped="6">
+<testng-results ignored="0" total="8" passed="3" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-08T12:59:55 IST" name="Default suite" finished-at="2023-11-08T12:59:55 IST" duration-ms="125">
+  <suite started-at="2024-01-09T18:28:11 IST" name="Default suite" finished-at="2024-01-09T18:28:13 IST" duration-ms="1957">
     <groups>
     </groups>
-    <test started-at="2023-11-08T12:59:55 IST" name="Default test" finished-at="2023-11-08T12:59:55 IST" duration-ms="125">
+    <test started-at="2024-01-09T18:28:11 IST" name="Default test" finished-at="2024-01-09T18:28:13 IST" duration-ms="1957">
       <class name="login.SendOtp">
-        <test-method is-config="true" signature="beforeSuite(org.testng.ITestContext)[pri:0, instance:login.SendOtp@13fd2ccd]" started-at="2023-11-08T12:59:55 IST" name="beforeSuite" finished-at="2023-11-08T12:59:55 IST" duration-ms="126" status="FAIL">
+        <test-method is-config="true" signature="beforeSuite(org.testng.ITestContext)[pri:0, instance:login.SendOtp@48aca48b]" started-at="2024-01-09T18:28:11 IST" name="beforeSuite" finished-at="2024-01-09T18:28:11 IST" duration-ms="23" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2b30a42c]]>
+                <![CDATA[org.testng.TestRunner@1e0895f5]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "customer.property.PropertyHelper.readProperty(String)" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "customer.property.PropertyHelper.readProperty(String)" is null
-at utils.BaseUtils.beforeSuite(BaseUtils.java:33)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="before_method()[pri:0, instance:login.SendOtp@13fd2ccd]" started-at="2023-11-08T12:59:55 IST" name="before_method" finished-at="2023-11-08T12:59:55 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="before_method()[pri:0, instance:login.SendOtp@48aca48b]" started-at="2024-01-09T18:28:11 IST" name="before_method" finished-at="2024-01-09T18:28:11 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before_method -->
-        <test-method signature="headerValidationForContentType_Missing()[pri:1, instance:login.SendOtp@13fd2ccd]" started-at="2023-11-08T12:59:55 IST" name="headerValidationForContentType_Missing" finished-at="2023-11-08T12:59:55 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "customer.property.PropertyHelper.readProperty(String)" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "customer.property.PropertyHelper.readProperty(String)" is null
-at utils.BaseUtils.beforeSuite(BaseUtils.java:33)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="headerValidationForContentType_Missing()[pri:1, instance:login.SendOtp@48aca48b]" started-at="2024-01-09T18:28:11 IST" name="headerValidationForContentType_Missing" finished-at="2024-01-09T18:28:13 IST" duration-ms="1732" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- headerValidationForContentType_Missing -->
-        <test-method is-config="true" signature="before_method()[pri:0, instance:login.SendOtp@13fd2ccd]" started-at="2023-11-08T12:59:55 IST" name="before_method" finished-at="2023-11-08T12:59:55 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="before_method()[pri:0, instance:login.SendOtp@48aca48b]" started-at="2024-01-09T18:28:13 IST" name="before_method" finished-at="2024-01-09T18:28:13 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before_method -->
-        <test-method signature="headerValidationForContentType_Invalid()[pri:2, instance:login.SendOtp@13fd2ccd]" started-at="2023-11-08T12:59:55 IST" name="headerValidationForContentType_Invalid" finished-at="2023-11-08T12:59:55 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "customer.property.PropertyHelper.readProperty(String)" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "customer.property.PropertyHelper.readProperty(String)" is null
-at utils.BaseUtils.beforeSuite(BaseUtils.java:33)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="headerValidationForContentType_Invalid()[pri:2, instance:login.SendOtp@48aca48b]" started-at="2024-01-09T18:28:13 IST" name="headerValidationForContentType_Invalid" finished-at="2024-01-09T18:28:13 IST" duration-ms="79" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- headerValidationForContentType_Invalid -->
-        <test-method is-config="true" signature="before_method()[pri:0, instance:login.SendOtp@13fd2ccd]" started-at="2023-11-08T12:59:55 IST" name="before_method" finished-at="2023-11-08T12:59:55 IST" duration-ms="0" status="SKIP">
+        <test-method signature="headerValidationForContentType_Blank()[pri:3, instance:login.SendOtp@48aca48b]" started-at="2024-01-09T18:28:13 IST" name="headerValidationForContentType_Blank" finished-at="2024-01-09T18:28:13 IST" duration-ms="40" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- headerValidationForContentType_Blank -->
+        <test-method is-config="true" signature="before_method()[pri:0, instance:login.SendOtp@48aca48b]" started-at="2024-01-09T18:28:13 IST" name="before_method" finished-at="2024-01-09T18:28:13 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before_method -->
-        <test-method signature="RequestBodyValidationForMobileNumber_Is_Correct()[pri:5, instance:login.SendOtp@13fd2ccd]" started-at="2023-11-08T12:59:55 IST" name="RequestBodyValidationForMobileNumber_Is_Correct" finished-at="2023-11-08T12:59:55 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="headerValidationForContentType_Correct()[pri:4, instance:login.SendOtp@48aca48b]" started-at="2024-01-09T18:28:13 IST" name="headerValidationForContentType_Correct" finished-at="2024-01-09T18:28:13 IST" duration-ms="6" status="FAIL">
+          <exception class="java.lang.Error">
             <message>
-              <![CDATA[Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "customer.property.PropertyHelper.readProperty(String)" is null]]>
+              <![CDATA[Unresolved compilation problem: 
+The method rawToJson(Response) is undefined for the type ApiClient
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "customer.property.PropertyHelper.readProperty(String)" is null
-at utils.BaseUtils.beforeSuite(BaseUtils.java:33)
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The method rawToJson(Response) is undefined for the type ApiClient
+
+at login.SendOtp.headerValidationForContentType_Correct(SendOtp.java:89)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
 at org.testng.SuiteRunner.run(SuiteRunner.java:330)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
@@ -154,31 +84,98 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.Error -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- headerValidationForContentType_Correct -->
+        <test-method is-config="true" signature="before_method()[pri:0, instance:login.SendOtp@48aca48b]" started-at="2024-01-09T18:28:13 IST" name="before_method" finished-at="2024-01-09T18:28:13 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before_method -->
+        <test-method is-config="true" signature="before_method()[pri:0, instance:login.SendOtp@48aca48b]" started-at="2024-01-09T18:28:13 IST" name="before_method" finished-at="2024-01-09T18:28:13 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before_method -->
+        <test-method signature="RequestBodyValidationForMobileNumber_Is_Correct()[pri:5, instance:login.SendOtp@48aca48b]" started-at="2024-01-09T18:28:13 IST" name="RequestBodyValidationForMobileNumber_Is_Correct" finished-at="2024-01-09T18:28:13 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problem: 
+The method rawToJson(Response) is undefined for the type ApiClient
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The method rawToJson(Response) is undefined for the type ApiClient
+
+at login.SendOtp.RequestBodyValidationForMobileNumber_Is_Correct(SendOtp.java:107)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RequestBodyValidationForMobileNumber_Is_Correct -->
-        <test-method is-config="true" signature="before_method()[pri:0, instance:login.SendOtp@13fd2ccd]" started-at="2023-11-08T12:59:55 IST" name="before_method" finished-at="2023-11-08T12:59:55 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="before_method()[pri:0, instance:login.SendOtp@48aca48b]" started-at="2024-01-09T18:28:13 IST" name="before_method" finished-at="2024-01-09T18:28:13 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before_method -->
-        <test-method signature="RequestBodyValidationForMobileNumber_Is_Blank()[pri:6, instance:login.SendOtp@13fd2ccd]" started-at="2023-11-08T12:59:55 IST" name="RequestBodyValidationForMobileNumber_Is_Blank" finished-at="2023-11-08T12:59:55 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="RequestBodyValidationForMobileNumber_Is_Blank()[pri:6, instance:login.SendOtp@48aca48b]" started-at="2024-01-09T18:28:13 IST" name="RequestBodyValidationForMobileNumber_Is_Blank" finished-at="2024-01-09T18:28:13 IST" duration-ms="3" status="FAIL">
+          <exception class="java.lang.Error">
             <message>
-              <![CDATA[Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "customer.property.PropertyHelper.readProperty(String)" is null]]>
+              <![CDATA[Unresolved compilation problem: 
+The method rawToJson(Response) is undefined for the type ApiClient
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "customer.property.PropertyHelper.readProperty(String)" is null
-at utils.BaseUtils.beforeSuite(BaseUtils.java:33)
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The method rawToJson(Response) is undefined for the type ApiClient
+
+at login.SendOtp.RequestBodyValidationForMobileNumber_Is_Blank(SendOtp.java:123)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
 at org.testng.SuiteRunner.run(SuiteRunner.java:330)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
@@ -191,31 +188,44 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RequestBodyValidationForMobileNumber_Is_Blank -->
-        <test-method is-config="true" signature="before_method()[pri:0, instance:login.SendOtp@13fd2ccd]" started-at="2023-11-08T12:59:55 IST" name="before_method" finished-at="2023-11-08T12:59:55 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="before_method()[pri:0, instance:login.SendOtp@48aca48b]" started-at="2024-01-09T18:28:13 IST" name="before_method" finished-at="2024-01-09T18:28:13 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before_method -->
-        <test-method signature="RequestBodyValidationForMobileNumber_Is_Invalid()[pri:7, instance:login.SendOtp@13fd2ccd]" started-at="2023-11-08T12:59:55 IST" name="RequestBodyValidationForMobileNumber_Is_Invalid" finished-at="2023-11-08T12:59:55 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="RequestBodyValidationForMobileNumber_Is_Invalid()[pri:7, instance:login.SendOtp@48aca48b]" started-at="2024-01-09T18:28:13 IST" name="RequestBodyValidationForMobileNumber_Is_Invalid" finished-at="2024-01-09T18:28:13 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.Error">
             <message>
-              <![CDATA[Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "customer.property.PropertyHelper.readProperty(String)" is null]]>
+              <![CDATA[Unresolved compilation problem: 
+The method rawToJson(Response) is undefined for the type ApiClient
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "customer.property.PropertyHelper.readProperty(String)" is null
-at utils.BaseUtils.beforeSuite(BaseUtils.java:33)
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The method rawToJson(Response) is undefined for the type ApiClient
+
+at login.SendOtp.RequestBodyValidationForMobileNumber_Is_Invalid(SendOtp.java:139)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
 at org.testng.SuiteRunner.run(SuiteRunner.java:330)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
@@ -228,31 +238,40 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RequestBodyValidationForMobileNumber_Is_Invalid -->
-        <test-method is-config="true" signature="before_method()[pri:0, instance:login.SendOtp@13fd2ccd]" started-at="2023-11-08T12:59:55 IST" name="before_method" finished-at="2023-11-08T12:59:55 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before_method -->
-        <test-method signature="RequestBodyValidationForMobileNumber_Is_Missing()[pri:8, instance:login.SendOtp@13fd2ccd]" started-at="2023-11-08T12:59:55 IST" name="RequestBodyValidationForMobileNumber_Is_Missing" finished-at="2023-11-08T12:59:55 IST" duration-ms="1" status="SKIP">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="RequestBodyValidationForMobileNumber_Is_Missing()[pri:8, instance:login.SendOtp@48aca48b]" started-at="2024-01-09T18:28:13 IST" name="RequestBodyValidationForMobileNumber_Is_Missing" finished-at="2024-01-09T18:28:13 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.Error">
             <message>
-              <![CDATA[Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "customer.property.PropertyHelper.readProperty(String)" is null]]>
+              <![CDATA[Unresolved compilation problem: 
+The method rawToJson(Response) is undefined for the type ApiClient
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "customer.property.PropertyHelper.readProperty(String)" is null
-at utils.BaseUtils.beforeSuite(BaseUtils.java:33)
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The method rawToJson(Response) is undefined for the type ApiClient
+
+at login.SendOtp.RequestBodyValidationForMobileNumber_Is_Missing(SendOtp.java:155)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
 at org.testng.SuiteRunner.run(SuiteRunner.java:330)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
@@ -265,10 +284,14 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RequestBodyValidationForMobileNumber_Is_Missing -->
+        <test-method is-config="true" signature="before_method()[pri:0, instance:login.SendOtp@48aca48b]" started-at="2024-01-09T18:28:13 IST" name="before_method" finished-at="2024-01-09T18:28:13 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before_method -->
       </class> <!-- login.SendOtp -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

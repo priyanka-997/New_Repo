@@ -14,7 +14,7 @@ public class DataProvider {
 	
 	public DataProvider() {
 		masterDataProp = new Properties();
-		String fileLoc = System.getProperty("user.dir") + "/DataProvider.properties";
+		String fileLoc = System.getProperty("user.dir") + "/DataProperties.properties";
 		try {
 			File f = new File(fileLoc);
 			FileInputStream fis = new FileInputStream(f);

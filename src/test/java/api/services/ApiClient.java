@@ -21,12 +21,12 @@ public class ApiClient {
 	        baseURL = URI.toString();
 	    }
 	 
-	 public static JsonPath rawToJson(io.restassured.response.Response r) {
+	 /*public static  JsonPath rawToJson(io.restassured.response.Response r) {
 	        String respon = r.asString();
 	        JsonPath js = new JsonPath(respon);
 	        return js;
 	        
-	 }
+	 }*/
 	 
 	 public static void validateStatusCode(Response response, HttpStatusCode httpStatusCode) {
 	        int statusCode = response.then().extract().statusCode();

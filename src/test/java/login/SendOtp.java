@@ -35,7 +35,7 @@ public class SendOtp extends BaseUtils{
         header.remove("Content_Type");
 
         try{
-            Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header, LoginSendOtpPayload.getLoginPayload(mobile_number));
+        	Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header, LoginSendOtpPayload.getLoginPayload(mobile_number));
             ApiClient.validateStatusCode(clientResponse, HttpStatusCode.UNPROCESSABLE_ENTITY);
         }
         catch(Exception e){
@@ -57,25 +57,27 @@ public class SendOtp extends BaseUtils{
             e.printStackTrace();
         }
     }
-    @Test(priority = 3,enabled = false,testName = "Validations for Mandatory Header - Content_Type Blank/null")
+    @Test(priority = 3,testName = "Validations for Mandatory Header - Content_Type Blank/null")
     public void headerValidationForContentType_Blank()  {
 
         Map<String, String> header = new HashMap<>(genericHeaders);
         header.replace("Content_Type","");
 
-        try{
+       try{
             Response clientResponse = ApiClient.postRequestWithHeader(REQUEST_POST_SEND_OTP,header,LoginSendOtpPayload.getLoginPayload(mobile_number));
             ApiClient.validateStatusCode(clientResponse, HttpStatusCode.OK);
             
-            JsonPath js=ApiClient.rawToJson(clientResponse);
-            Assert.assertEquals(js.get("message"), "OTP Sent to entered mobile number");
-        }
+          //JsonPath js=ApiClient.rawToJson(clientResponse);
+             
+          Assert.assertEquals(clientResponse.jsonPath().getString("message"), "OTP Sent to entered mobile number");
+          System.out.println("Response of this test case is " +clientResponse.jsonPath().getString("message"));
+       }
         catch(Exception e){
-            e.printStackTrace();
-        }
-    }
+           e.printStackTrace();
+      }
+   }
     
-    @Test(priority = 4,enabled = false,testName = "Validations for Mandatory Header - Content_Type Correct")
+    @Test(priority = 4,testName = "Validations for Mandatory Header - Content_Type Correct")
     public void headerValidationForContentType_Correct()  {
 
         Map<String, String> header = new HashMap<>(genericHeaders);
