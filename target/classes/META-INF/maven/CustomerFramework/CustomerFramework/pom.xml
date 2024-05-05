@@ -71,11 +71,13 @@
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/org.testng/testng -->
-<dependency>
+<!--<dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
-    <version>7.7.1</version>
-</dependency>
+    <version>7.8.0</version>
+    <scope>test</scope>
+</dependency>-->
+
 
 
 <!-- https://mvnrepository.com/artifact/org.testng/testng -->

@@ -5,13 +5,9 @@
     <classes>
       <class name="login.SendOtp">
         <methods>
-          <include name="RequestBodyValidationForMobileNumber_Is_Invalid"/>
-          <include name="RequestBodyValidationForMobileNumber_Is_Blank"/>
-          <include name="headerValidationForContentType_Correct"/>
+          <include name="TC_1_headerValidationForContentType_Missing"/>
           <include name="beforeSuite"/>
-          <include name="RequestBodyValidationForMobileNumber_Is_Correct"/>
           <include name="before_method"/>
-          <include name="RequestBodyValidationForMobileNumber_Is_Missing"/>
         </methods>
       </class> <!-- login.SendOtp -->
     </classes>

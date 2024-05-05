@@ -20,35 +20,38 @@ public class BaseUtils {
 	protected static String REQUEST_POST_DETECT_DEVICE;
     
     protected static ApiClient apiClient;
+    Map<String, String> testdata;
    
 
     @BeforeSuite
     public void beforeSuite(ITestContext context) throws Exception {
         
-        DataProvider data = new DataProvider();
-        data.loadDataMap();
-        Map<String, String> testdata = data.getDataMap();
-        
+    	testdata = getTestData();
        	
-            if (PropertyHelper.readProperty("env").equalsIgnoreCase("qa")) {
-                String url = "";
-                if (System.getProperty("baseUrl") != null)
-                    url = System.getProperty("baseUrl");
-                else
-                    url = testdata.get("baseUrl");
-               // apiClient = new ApiClient(url);
-              //  GlobalVariables.APIbaseURL = url;
-              //  GlobalVariables.apiKey = testdata.get("apiKey");
-
+            if (testdata.get("env").equalsIgnoreCase("qa")) {
+                String url = testdata.get("baseUrlQa");
+               apiClient = new ApiClient(url);
                 
         }
+            
 	
-	REQUEST_POST_SEND_OTP = PropertyHelper.readProperty("REQUEST_POST_SEND_OTP");
-	REQUEST_POST_RESEND_OTP = PropertyHelper.readProperty("REQUEST_POST_RESEND_OTP");
-	REQUEST_POST_VERIFY_LOGIN_OTP = PropertyHelper.readProperty("REQUEST_POST_VERIFY_LOGIN_OTP");
-	REQUEST_POST_PINCODE_SERVICABLE= PropertyHelper.readProperty("REQUEST_POST_PINCODE_SERVICABLE");
-	REQUEST_POST_DETECT_DEVICE= PropertyHelper.readProperty("REQUEST_POST_DETECT_DEVICE");
+	REQUEST_POST_SEND_OTP = testdata.get("REQUEST_POST_SEND_OTP");
+	REQUEST_POST_RESEND_OTP = testdata.get("REQUEST_POST_RESEND_OTP");
+	REQUEST_POST_VERIFY_LOGIN_OTP = testdata.get("REQUEST_POST_VERIFY_LOGIN_OTP");
+	REQUEST_POST_PINCODE_SERVICABLE= testdata.get("REQUEST_POST_PINCODE_SERVICABLE");
+	REQUEST_POST_DETECT_DEVICE= testdata.get("REQUEST_POST_DETECT_DEVICE");
 	
 	
 }
+    
+    public Map<String, String>  getTestData() {
+    	DataProvider data = new DataProvider();
+        data.loadDataMap();
+        Map<String, String> td = data.getDataMap();
+        System.out.println("Value of td is " +td);
+        return td;
+        
+       
+    	
+    }
 }

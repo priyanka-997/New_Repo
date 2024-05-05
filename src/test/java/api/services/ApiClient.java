@@ -21,29 +21,29 @@ public class ApiClient {
 	        baseURL = URI.toString();
 	    }
 	 
-	 /*public static  JsonPath rawToJson(io.restassured.response.Response r) {
+	 public static  JsonPath rawToJson(io.restassured.response.Response r) {
 	        String respon = r.asString();
 	        JsonPath js = new JsonPath(respon);
 	        return js;
 	        
-	 }*/
+	 }
 	 
 	 public static void validateStatusCode(Response response, HttpStatusCode httpStatusCode) {
 	        int statusCode = response.then().extract().statusCode();
-	        Assert.assertEquals(statusCode, httpStatusCode.getCode(), "Verify Http Status Code::");
+	        Assert.assertEquals(statusCode, httpStatusCode.getCode(), "Expected staus code is" +httpStatusCode.getCode() + "Actual status code is " +statusCode );
 	    }
 
-	 public static Response postRequestWithHeader(String param, Map<String, String> map, String body) {
+	 public static Response postFormDataSendOtp(String param, Map<String, String> map, String mobileNumber) {
 	        
 	        try {
 	            Response resp = given()
-	                    .log().all().with().contentType(ContentType.URLENC).headers(map).body(body).when().post(param).then()
+	                    .log().all().with().contentType(ContentType.URLENC).headers(map).formParam("mobile_number", mobileNumber).when().post(param).then()
 	                    .log().all().extract().response();
 	            
 	            return resp;
 	        } catch (Exception e) {
 	            return given().log().all().with().contentType(ContentType.URLENC).headers(map)
-	                    .body(body).when().post(param).then().log().all().extract().response();
+	                    .formParam("mobile_number", mobileNumber).when().post(param).then().log().all().extract().response();
 	        }
 	        
 	        

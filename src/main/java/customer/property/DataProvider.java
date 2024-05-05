@@ -10,7 +10,7 @@ public class DataProvider {
 	
 	private Properties masterDataProp = null;
 	private Map<String,String> datamap = new HashMap<String,String>();
-	private Map<String,String> cardDetail = new HashMap<String,String>();
+	
 	
 	public DataProvider() {
 		masterDataProp = new Properties();
@@ -29,9 +29,7 @@ public class DataProvider {
 		for (String key : masterDataProp.stringPropertyNames()) {
 		    String value = masterDataProp.getProperty(key).trim();
 		    datamap.put(key, value);
-		    if(key.startsWith("CC_")) {
-		    	cardDetail.put(key, value);
-		    }
+		    
 		}
 	}
 	
@@ -39,9 +37,6 @@ public class DataProvider {
 		return datamap;
 	}
 	
-	public Map<String,String> getCardDetailMap() {
-		return cardDetail;
-	}
 	
 
 }
